@@ -37,7 +37,7 @@ import {
 export default function HomePage() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       {/* <TrustBar /> */}
       {/* <WhatWeDo /> */}
       {/* <HowItWorks /> */}
@@ -87,10 +87,10 @@ function Hero() {
             your SLA, 24/7 × 365.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href="/contact" variant="inverse" size="lg">
+            <Button href="/#contact" variant="inverse" size="lg">
               Become a Partner
             </Button>
-            <Button href="/services" variant="outlineLight" size="lg">
+            <Button href="/#services" variant="outlineLight" size="lg">
               Explore Our Services
             </Button>
           </div>
