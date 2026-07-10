@@ -38,8 +38,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      {/* <TrustBar /> */}
-      {/* <WhatWeDo /> */}
+      <TrustBar />
+      <WhatWeDo />
       {/* <HowItWorks /> */}
       {/* <TheCompany /> */}
       {/* <SectorsPreview /> */}
@@ -135,7 +135,7 @@ function WhatWeDo() {
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {whatWeDo.map((item, i) => (
           <Reveal key={item.title} delay={i * 80}>
-            <Link href={item.href} className="block h-full">
+            <Link href={item.href} className="block h-full pointer-events-none">
               <Card className="group h-full hover:-translate-y-1 hover:card-shadow-hover">
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-navy-50 text-navy-700 transition-colors group-hover:bg-navy-950 group-hover:text-white">
                   <Icon name={item.icon} className="h-5 w-5" />
@@ -154,7 +154,7 @@ function WhatWeDo() {
           </Reveal>
         ))}
       </div>
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center pointer-events-none">
         <Button href="/services" variant="outline" size="default">
           View All Services <ArrowRight className="ml-1 h-3.5 w-3.5" />
         </Button>
