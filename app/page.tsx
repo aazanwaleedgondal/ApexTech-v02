@@ -40,8 +40,8 @@ export default function HomePage() {
       <Hero />
       <TrustBar />
       <WhatWeDo />
-      {/* <HowItWorks /> */}
-      {/* <TheCompany /> */}
+      <HowItWorks />
+      <TheCompany />
       {/* <SectorsPreview /> */}
       {/* <CoverageSection /> */}
       {/* <WhyApexTech /> */}
@@ -170,7 +170,7 @@ function HowItWorks() {
         eyebrow="How It Works"
         title="From request to sign-off in four steps"
       />
-      <div className="grid gap-4 md:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-4 pointer-events-none">
         {howItWorks.map((step, i) => (
           <Reveal key={step.step} delay={i * 100}>
             <div className="relative h-full rounded-xl border border-navy-100 bg-white p-6 card-shadow">
@@ -197,7 +197,7 @@ function HowItWorks() {
 function TheCompany() {
   return (
     <Section variant="default">
-      <div className="grid items-center gap-12 lg:grid-cols-2">
+      <div className="grid items-center gap-12 lg:grid-cols-2 pointer-events-none">
         <Reveal>
           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy-500">
             The Company
