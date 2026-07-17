@@ -42,12 +42,12 @@ export default function HomePage() {
       <WhatWeDo />
       <HowItWorks />
       <TheCompany />
-      {/* <SectorsPreview /> */}
+      <SectorsPreview />
       {/* <CoverageSection /> */}
-      {/* <WhyApexTech /> */}
+      <WhyApexTech />
       {/* <ClientLogos /> */}
-      {/* <Testimonials /> */}
-      {/* <ContactStrip /> */}
+      <Testimonials />
+      <ContactStrip />
       {/* <FaqSection /> */}
     </>
   );
@@ -170,7 +170,7 @@ function HowItWorks() {
         eyebrow="How It Works"
         title="From request to sign-off in four steps"
       />
-      <div className="grid gap-4 md:grid-cols-4 pointer-events-none">
+      <div className="grid gap-4 md:grid-cols-4 c">
         {howItWorks.map((step, i) => (
           <Reveal key={step.step} delay={i * 100}>
             <div className="relative h-full rounded-xl border border-navy-100 bg-white p-6 card-shadow">
@@ -263,7 +263,7 @@ function SectorsPreview() {
         title="Built for the industries that can't afford downtime"
         description="We tailor our field services to the realities of each sector we serve."
       />
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-3 pointer-events-none">
         {sectorsPreview.map((sector, i) => (
           <Reveal key={sector.name} delay={i * 100}>
             <Link href={sector.href} className="group block overflow-hidden rounded-xl border border-navy-100 bg-white card-shadow transition-all hover:-translate-y-1 hover:card-shadow-hover">
@@ -291,7 +291,7 @@ function SectorsPreview() {
           </Reveal>
         ))}
       </div>
-      <div className="mt-10 text-center">
+      <div className="mt-10 text-center pointer-events-none">
         <Button href="/sectors" variant="outline" size="default">
           Explore All Sectors <ArrowRight className="ml-1 h-3.5 w-3.5" />
         </Button>
@@ -328,7 +328,7 @@ function WhyApexTech() {
         title="What you get when you work with us"
         variant="light"
       />
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 pointer-events-none">
         {whyApexTech.map((item, i) => (
           <Reveal key={item.title} delay={i * 80}>
             <div className="h-full rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10">
@@ -372,7 +372,7 @@ function Testimonials() {
         title="What our clients say"
         description="Real feedback from the teams we support — placeholder quotes, ready to be replaced with client input."
       />
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-3 pointer-events-none">
         {testimonials.map((t, i) => (
           <Reveal key={i} delay={i * 100}>
             <Card className="h-full">
@@ -398,7 +398,7 @@ function ContactStrip() {
   const [role, setRole] = useState<string>('');
   return (
     <Section variant="off-white">
-      <div className="rounded-2xl border border-navy-100 bg-white p-8 text-center card-shadow md:p-12">
+      <div className="rounded-2xl border border-navy-100 bg-white p-8 text-center card-shadow md:p-12 ">
         <h2 className="text-2xl font-bold text-navy-950 md:text-[28px]">
           Have some questions or want to say hi?
         </h2>
@@ -421,7 +421,7 @@ function ContactStrip() {
               </SelectContent>
             </Select>
           </div>
-          <div className="flex items-end">
+          <div className="flex items-end pointer-events-none">
             <Button href="/contact" variant="primary" size="lg" className="w-full sm:w-auto">
               Get In Touch <ArrowRight className="ml-1 h-3.5 w-3.5" />
             </Button>
