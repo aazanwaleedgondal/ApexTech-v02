@@ -149,7 +149,7 @@ export default function CompanyPage() {
               centre operations. Here is how our capability breaks down across
               the disciplines we work in.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 pointer-events-none">
               <Button href="/services" variant="primary" size="default">
                 Explore Our Services <ArrowRight className="ml-1 h-3.5 w-3.5" />
               </Button>
@@ -175,7 +175,7 @@ export default function CompanyPage() {
             Talk to us about your sites, your SLAs, and your goals — we will
             build a coverage plan that fits.
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="pointer-events-none mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button href="/contact" variant="inverse" size="lg">
               Become a Partner
             </Button>

@@ -260,7 +260,7 @@
 export const navLinks = [
 
   { label: 'Home', href: '/' },
-  { label: 'Company', href: '/' },
+  { label: 'Company', href: '/company' },
   { label: 'Services', href: '/', megaMenu: true },
   { label: 'Sectors', href: '/', dropdown: true },
   { label: 'Coverage', href: '/' },

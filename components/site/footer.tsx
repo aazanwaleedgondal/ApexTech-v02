@@ -29,7 +29,7 @@ function FlagBadge({ code }: { code: string }) {
 
 export function SiteFooter() {
   return (
-    <footer className="bg-navy-950 text-white">
+    <footer className="bg-navy-950 text-white pointer-events-none">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand */}

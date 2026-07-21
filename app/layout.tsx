@@ -43,7 +43,7 @@ export default function RootLayout({
           <PageTransition>
             <main className="flex-1">{children}</main>
           </PageTransition>
-          {/* <SiteFooter /> */}
+          <SiteFooter />
         </div>
         <ScrollToTop />
       </body>
