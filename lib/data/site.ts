@@ -263,9 +263,9 @@ export const navLinks = [
   { label: 'Company', href: '/company' },
   { label: 'Services', href: '/', megaMenu: true },
   { label: 'Sectors', href: '/', dropdown: true },
-  { label: 'Coverage', href: '/' },
-  { label: 'Careers', href: '/' },
-  { label: 'Contact', href: '/' },
+  // { label: 'Coverage', href: '/' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'Contact', href: '/contact' },
 
 ];
 
