@@ -96,8 +96,8 @@ export function SiteHeader() {
                           {services.map((s) => (
                             <Link
                               key={s.slug}
-                              // href={`/services#${s.slug}`}
-                              href={``}
+                              href={`/services#${s.slug}`}
+                              // href={``}
                               className="group rounded-xl p-3 transition-colors hover:bg-navy-50"
                             >
                               <p className="text-[13px] font-semibold text-navy-950 group-hover:text-navy-700">
@@ -113,8 +113,8 @@ export function SiteHeader() {
                               Need something not listed? We probably do it.
                             </p>
                             <Link
-                              // href="/contact"
-                              href=""
+                              href="/contact"
+                              // href=""
                               className="flex items-center gap-1 text-[12px] font-semibold text-white hover:text-navy-200"
                             >
                               Talk to us <ArrowRight className="h-3 w-3" />
@@ -155,8 +155,8 @@ export function SiteHeader() {
                           {sectors.map((s) => (
                             <Link
                               key={s.slug}
-                              // href={`/sectors#${s.slug}`}
-                              href={``}
+                              href={`/sectors#${s.slug}`}
+                              // href={``}
                               className="block rounded-lg px-3 py-2 text-[13px] font-medium text-navy-700 transition-colors hover:bg-navy-50 hover:text-navy-950"
                             >
                               {s.name}

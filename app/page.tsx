@@ -79,18 +79,18 @@ function Hero() {
           <h1 className="mt-6 text-3xl font-bold leading-tight tracking-tight text-white md:text-5xl md:text-[52px]">
             Global <RotatingHeadline />
             <br />
-            <span className="text-navy-300">on demand, anywhere.</span>
+            <span className="text-navy-300">that drives growth</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-[14px] leading-relaxed text-navy-200 md:text-[15px]">
-            A worldwide network of certified, multilingual engineers — from L1
-            deskside to L5 data centre specialists — ready to dispatch within
-            your SLA, 24/7 × 365.
+            From websites and mobile apps to SaaS platforms, custom software,
+            e-commerce, design, and digital marketing — we help businesses
+            turn ideas into scalable digital experiences.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href="/#contact" variant="inverse" size="lg">
+            <Button href="/contact" variant="inverse" size="lg">
               Become a Partner
             </Button>
-            <Button href="/#services" variant="outlineLight" size="lg">
+            <Button href="/services" variant="outlineLight" size="lg">
               Explore Our Services
             </Button>
           </div>
@@ -135,7 +135,7 @@ function WhatWeDo() {
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {whatWeDo.map((item, i) => (
           <Reveal key={item.title} delay={i * 80}>
-            <Link href={item.href} className="block h-full pointer-events-none">
+            <Link href={item.href} className="block h-full pointer-events-show">
               <Card className="group h-full hover:-translate-y-1 hover:card-shadow-hover">
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-navy-50 text-navy-700 transition-colors group-hover:bg-navy-950 group-hover:text-white">
                   <Icon name={item.icon} className="h-5 w-5" />
@@ -154,7 +154,7 @@ function WhatWeDo() {
           </Reveal>
         ))}
       </div>
-      <div className="mt-10 text-center pointer-events-none">
+      <div className="mt-10 text-center">
         <Button href="/services" variant="outline" size="default">
           View All Services <ArrowRight className="ml-1 h-3.5 w-3.5" />
         </Button>
@@ -197,7 +197,7 @@ function HowItWorks() {
 function TheCompany() {
   return (
     <Section variant="default">
-      <div className="grid items-center gap-12 lg:grid-cols-2 pointer-events-none">
+      <div className="grid items-center gap-12 lg:grid-cols-2 pointer-events-show">
         <Reveal>
           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-navy-500">
             The Company
@@ -263,7 +263,7 @@ function SectorsPreview() {
         title="Built for the industries that can't afford downtime"
         description="We tailor our field services to the realities of each sector we serve."
       />
-      <div className="grid gap-5 md:grid-cols-3 pointer-events-none">
+      <div className="grid gap-5 md:grid-cols-3 pointer-events-show">
         {sectorsPreview.map((sector, i) => (
           <Reveal key={sector.name} delay={i * 100}>
             <Link href={sector.href} className="group block overflow-hidden rounded-xl border border-navy-100 bg-white card-shadow transition-all hover:-translate-y-1 hover:card-shadow-hover">
@@ -291,7 +291,7 @@ function SectorsPreview() {
           </Reveal>
         ))}
       </div>
-      <div className="mt-10 text-center pointer-events-none">
+      <div className="mt-10 text-center pointer-events-show">
         <Button href="/sectors" variant="outline" size="default">
           Explore All Sectors <ArrowRight className="ml-1 h-3.5 w-3.5" />
         </Button>
@@ -328,7 +328,7 @@ function WhyApexTech() {
         title="What you get when you work with us"
         variant="light"
       />
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 pointer-events-none">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 pointer-events-show">
         {whyApexTech.map((item, i) => (
           <Reveal key={item.title} delay={i * 80}>
             <div className="h-full rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-white/20 hover:bg-white/10">
@@ -372,7 +372,7 @@ function Testimonials() {
         title="What our clients say"
         description="Real feedback from the teams we support — placeholder quotes, ready to be replaced with client input."
       />
-      <div className="grid gap-5 md:grid-cols-3 pointer-events-none">
+      <div className="grid gap-5 md:grid-cols-3 pointer-events-show">
         {testimonials.map((t, i) => (
           <Reveal key={i} delay={i * 100}>
             <Card className="h-full">
@@ -421,7 +421,7 @@ function ContactStrip() {
               </SelectContent>
             </Select>
           </div>
-          <div className="flex items-end pointer-events-none">
+          <div className="flex items-end pointer-events-show">
             <Button href="/contact" variant="primary" size="lg" className="w-full sm:w-auto">
               Get In Touch <ArrowRight className="ml-1 h-3.5 w-3.5" />
             </Button>

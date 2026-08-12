@@ -262,19 +262,28 @@ export const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Company', href: '/company' },
   { label: 'Services', href: '/', megaMenu: true },
-  { label: 'Sectors', href: '/', dropdown: true },
+  // { label: 'Sectors', href: '/', dropdown: true },
   // { label: 'Coverage', href: '/' },
   { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
 
 ];
 
+// export const heroRotatingHeadlines = [
+//   'Smart Hands',
+//   'IMAC',
+//   'Data Centre Support',
+//   'Global Deployments',
+//   'Wireless Survey',
+// ];
+
+
 export const heroRotatingHeadlines = [
-  'Smart Hands',
-  'IMAC',
-  'Data Centre Support',
-  'Global Deployments',
-  'Wireless Survey',
+  'Digital Experiences',
+  'Web & Mobile Apps',
+  'Custom Software',
+  'SaaS Platforms',
+  'Business Solutions',
 ];
 
 export const trustBar = [
@@ -284,32 +293,61 @@ export const trustBar = [
   { label: 'Ekahau Certified Partner', icon: 'badge-check' },
 ];
 
+// export const whatWeDo = [
+//   {
+//     title: 'Smart Hands / Break-Fix',
+//     description: 'Certified engineers on-site fast to diagnose and repair.',
+//     icon: 'wrench',
+//     href: '/services#smart-hands',
+//   },
+//   {
+//     title: 'IMAC Services',
+//     description: 'Install, Move, Add, Change, Dispose — end-to-end.',
+//     icon: 'package-plus',
+//     href: '/services#imac',
+//   },
+//   {
+//     title: 'Data Centre Support',
+//     description: 'Hands-on support inside colo and private facilities.',
+//     icon: 'server',
+//     href: '/services#data-centre-support',
+//   },
+//   {
+//     title: 'Wireless Survey',
+//     description: 'Ekahau-certified surveys for reliable Wi-Fi coverage.',
+//     icon: 'wifi',
+//     href: '/services#wireless-survey',
+//   },
+// ];
+
+
 export const whatWeDo = [
   {
-    title: 'Smart Hands / Break-Fix',
-    description: 'Certified engineers on-site fast to diagnose and repair.',
-    icon: 'wrench',
-    href: '/services#smart-hands',
+    title: 'Web Development',
+    description: 'Modern, responsive websites and powerful web applications built for your business.',
+    icon: 'globe',
+    href: '/services#web-development',
   },
   {
-    title: 'IMAC Services',
-    description: 'Install, Move, Add, Change, Dispose — end-to-end.',
-    icon: 'package-plus',
-    href: '/services#imac',
+    title: 'Mobile App Development',
+    description: 'Scalable Android and iOS applications designed for smooth user experiences.',
+    icon: 'smartphone',
+    href: '/services#mobile-app-development',
   },
   {
-    title: 'Data Centre Support',
-    description: 'Hands-on support inside colo and private facilities.',
-    icon: 'server',
-    href: '/services#data-centre-support',
+    title: 'UI/UX Design',
+    description: 'Clean, intuitive interfaces and user experiences that make products easy to use.',
+    icon: 'palette',
+    href: '/services#ui-ux-design',
   },
   {
-    title: 'Wireless Survey',
-    description: 'Ekahau-certified surveys for reliable Wi-Fi coverage.',
-    icon: 'wifi',
-    href: '/services#wireless-survey',
+    title: 'Custom Software Development',
+    description: 'Tailored software solutions built around your unique business requirements.',
+    icon: 'code',
+    href: '/services#custom-software-development',
   },
 ];
+
 
 export const howItWorks = [
   {
@@ -495,16 +533,30 @@ export const offices = [
   { city: 'Dubai', country: 'United Arab Emirates', flag: 'AE', address: 'Sheikh Zayed Road, Dubai International Financial Centre, Dubai' },
 ];
 
+// export const servicesDropdown = [
+//   'Smart Hands / Break-Fix',
+//   'IMAC / IMACD',
+//   'Data Centre Support',
+//   'Third-Party Maintenance',
+//   'Network Services',
+//   'Deskside / EUC Support',
+//   'Wireless Survey',
+//   'IT Asset Disposition',
+//   'Staff Augmentation',
+// ];
+
+
 export const servicesDropdown = [
-  'Smart Hands / Break-Fix',
-  'IMAC / IMACD',
-  'Data Centre Support',
-  'Third-Party Maintenance',
-  'Network Services',
-  'Deskside / EUC Support',
-  'Wireless Survey',
-  'IT Asset Disposition',
-  'Staff Augmentation',
+  'Web Development',
+  'Mobile App Development',
+  'UI/UX Design',
+  'Custom Software Development',
+  'SaaS Development',
+  'E-Commerce Development',
+  'Digital Marketing',
+  'SEO Services',
+  'Branding & Graphic Design',
+  'API & System Integration',
 ];
 
 export const sectorsDropdown = [
