@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronDown, Menu, X, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { navLinks, servicesDropdown, sectorsDropdown } from '@/lib/data/site';
+// import { navLinks, servicesDropdown, sectorsDropdown } from '@/lib/data/site';
+import { navLinks } from '@/lib/data/site';
 import { services } from '@/lib/data/services';
 import { sectors } from '@/lib/data/sectors';
 import { Button } from '@/components/site/button';
@@ -126,48 +127,48 @@ export function SiteHeader() {
                   </div>
                 );
               }
-              if (link.dropdown) {
-                return (
-                  <div
-                    key={link.href}
-                    className="relative"
-                    onMouseEnter={() => setSectorsOpen(true)}
-                    onMouseLeave={() => setSectorsOpen(false)}
-                  >
-                    <Link
-                      href={link.href}
-                      className={cn(
-                        'flex items-center gap-1 rounded-lg px-3 py-2 text-[13px] font-medium transition-colors',
-                        isActive ? 'text-white' : 'text-navy-200 hover:text-white'
-                      )}
-                    >
-                      {link.label}
-                      <ChevronDown
-                        className={cn(
-                          'h-3.5 w-3.5 transition-transform',
-                          sectorsOpen && 'rotate-180'
-                        )}
-                      />
-                    </Link>
-                    {sectorsOpen && (
-                      <div className="absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-2">
-                        <div className="rounded-2xl border border-navy-100 bg-white p-2 card-shadow animate-fade-in">
-                          {sectors.map((s) => (
-                            <Link
-                              key={s.slug}
-                              href={`/sectors#${s.slug}`}
-                              // href={``}
-                              className="block rounded-lg px-3 py-2 text-[13px] font-medium text-navy-700 transition-colors hover:bg-navy-50 hover:text-navy-950"
-                            >
-                              {s.name}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              }
+              // if (link.dropdown) {
+              //   return (
+              //     <div
+              //       key={link.href}
+              //       className="relative"
+              //       onMouseEnter={() => setSectorsOpen(true)}
+              //       onMouseLeave={() => setSectorsOpen(false)}
+              //     >
+              //       <Link
+              //         href={link.href}
+              //         className={cn(
+              //           'flex items-center gap-1 rounded-lg px-3 py-2 text-[13px] font-medium transition-colors',
+              //           isActive ? 'text-white' : 'text-navy-200 hover:text-white'
+              //         )}
+              //       >
+              //         {link.label}
+              //         <ChevronDown
+              //           className={cn(
+              //             'h-3.5 w-3.5 transition-transform',
+              //             sectorsOpen && 'rotate-180'
+              //           )}
+              //         />
+              //       </Link>
+              //       {sectorsOpen && (
+              //         <div className="absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-2">
+              //           <div className="rounded-2xl border border-navy-100 bg-white p-2 card-shadow animate-fade-in">
+              //             {sectors.map((s) => (
+              //               <Link
+              //                 key={s.slug}
+              //                 href={`/sectors#${s.slug}`}
+              //                 // href={``}
+              //                 className="block rounded-lg px-3 py-2 text-[13px] font-medium text-navy-700 transition-colors hover:bg-navy-50 hover:text-navy-950"
+              //               >
+              //                 {s.name}
+              //               </Link>
+              //             ))}
+              //           </div>
+              //         </div>
+              //       )}
+              //     </div>
+              //   );
+              // }
               return (
                 <Link
                   key={link.href}
