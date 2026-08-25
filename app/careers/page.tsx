@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
-import { CheckCircle2, Upload, Send } from 'lucide-react';
+import { CheckCircle2, Upload, Send, ArrowRight } from 'lucide-react';
 import { PageHero } from '@/components/site/page-hero';
 import { Section, SectionHeading } from '@/components/site/section';
 import { Card } from '@/components/site/card';
@@ -101,6 +101,53 @@ export default function CareersPage() {
           ))}
         </div>
       </Section>
+
+{/* Careers Banner */}
+<section className="bg-white">
+  <div className="mx-auto grid max-w-7xl items-stretch lg:grid-cols-2">
+    
+    {/* Left - Image */}
+    <Reveal>
+      <div className="relative h-[320px] overflow-hidden lg:h-[480px] rounded-2xl">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/company-bg4.jpg"
+          alt="Careers at ApexTech Solutions"
+          className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+        />
+      </div>
+    </Reveal>
+
+    {/* Right - Content */}
+    <Reveal delay={150}>
+      <div className="flex h-full items-center bg-white px-6 py-14 sm:px-10 md:py-16 lg:px-14">
+        <div className="max-w-xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gray-500">
+            Build Your Future With Us
+          </p>
+
+          <h2 className="mt-4 text-3xl font-bold leading-tight text-black md:text-4xl">
+            Grow your career with a global technology network
+          </h2>
+
+          <p className="mt-5 text-[14px] leading-relaxed text-gray-600 md:text-[15px]">
+            Join a network of skilled professionals working on real-world
+            technology projects across industries and locations. Bring your
+            expertise, expand your experience, and work with a team that values
+            quality and reliability.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+
+            <Button href="/contact" variant="outline" size="lg">
+              Talk to Our Team
+            </Button>
+          </div>
+        </div>
+      </div>
+    </Reveal>
+  </div>
+</section>
 
       {/* Application Form */}
       <Section variant="off-white">

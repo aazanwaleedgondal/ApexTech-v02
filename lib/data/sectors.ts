@@ -43,23 +43,7 @@ export const sectors: Sector[] = [
       'Single contract for IMAC, deskside & maintenance',
     ],
   },
-  {
-    slug: 'data-centre',
-    name: 'Data Centre',
-    intro:
-      'Data centres demand precision. A misrouted cable or a delayed smart-hands call can cascade into a major incident — so every action needs to be fast, documented, and verified.',
-    challenge:
-      'A colocation customer needed 24/7 smart-hands across 9 facilities in 3 regions, with strict change-control and photo evidence on every action.',
-    engagement:
-      'We placed on-call engineers near each facility, integrated with their remote NOC, and enforced a photo-verified sign-off workflow on every ticket — from a drive swap to a full rack rebuild.',
-    pullQuote:
-      'Their engineers feel like an extension of our NOC. Fast, careful, and always documented.',
-    outcome: [
-      '9 facilities covered, 24/7 × 365',
-      '2-hour SLA met on 99.4% of calls',
-      '100% photo-verified sign-off',
-    ],
-  },
+
   {
     slug: 'healthcare',
     name: 'Healthcare',
@@ -94,21 +78,5 @@ export const sectors: Sector[] = [
       'Full chain-of-custody on every asset',
     ],
   },
-  {
-    slug: 'government',
-    name: 'Government',
-    intro:
-      'Public sector deployments require cleared personnel, strict procurement, and the ability to operate across dispersed and sometimes remote locations.',
-    challenge:
-      'A government agency needed field support across 300 sites, including remote locations, with cleared engineers and a compliant procurement route.',
-    engagement:
-      'We built a cleared engineer network, established forward stocking in three regions to reach remote sites faster, and operated through an approved procurement framework with full reporting.',
-    pullQuote:
-      'They reached sites no one else could. The forward stocking model made all the difference.',
-    outcome: [
-      '300 sites supported, including remote locations',
-      'Forward stocking in 3 regions',
-      'Full reporting for procurement compliance',
-    ],
-  },
+  
 ];
