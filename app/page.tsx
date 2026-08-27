@@ -273,7 +273,7 @@ function TheCompany() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/download.jpg"
-            alt="ApexTech Solutions"
+            alt="ApexTech Solutions" 
             className="h-[380px] w-full object-cover transition-transform duration-200 hover:scale-105"
           />
 
