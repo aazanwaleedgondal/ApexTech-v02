@@ -66,7 +66,7 @@ function Hero() {
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-navy-900/50" />
+      <div className="absolute inset-0 bg-navy-950/75" />
 
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-[0.07]">
@@ -272,9 +272,9 @@ function TheCompany() {
         <div className="relative overflow-hidden rounded-2xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/company-bg.jpg"
+            src="/images/download.jpg"
             alt="ApexTech Solutions"
-            className="h-[480px] w-full object-cover transition-transform duration-200 hover:scale-105"
+            className="h-[380px] w-full object-cover transition-transform duration-200 hover:scale-105"
           />
 
           {/* Optional overlay */}
