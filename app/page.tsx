@@ -111,9 +111,9 @@ function Hero() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-[14px] leading-relaxed text-navy-200 md:text-[15px]">
-            From websites and mobile apps to SaaS platforms, custom software,
-            e-commerce, design, and digital marketing — we help businesses
-            turn ideas into scalable digital experiences.
+            A worldwide network of certified, multilingual engineers — from L1
+            deskside to L5 data centre specialists — ready to dispatch within
+            your SLA, 24/7 × 365.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
