@@ -48,9 +48,8 @@ export function SiteFooter() {
               </div>
             </Link>
             <p className="mt-4 max-w-xs text-[13px] leading-relaxed text-navy-200">
-              Global IT field services — delivering with scale and agility.
-              Certified multilingual engineers across 55+ countries, available
-              24/7 × 365.
+              Global IT field services — certified, multilingual engineers across
+              55+ countries, available 24/7×365.
             </p>
             <div className="mt-6 flex gap-3">
               <div className="flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-2">
@@ -127,8 +126,8 @@ export function SiteFooter() {
         {/* Bottom bar */}
         <div className="mt-12 border-t border-white/10 pt-6">
           <p className="text-center text-[12px] text-navy-300">
-            © 2026 ApexTech Solutions | Delivering with Scale and Agility. All
-            Rights Reserved.
+            © 2026 ApexTech Solutions | Powered by Engineers, Backed by Results.
+            All Rights Reserved.
           </p>
         </div>
       </div>

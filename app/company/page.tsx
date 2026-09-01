@@ -15,8 +15,8 @@ export default function CompanyPage() {
     <>
       <PageHero
         eyebrow="Company"
-        title="Who we are"
-        description="A global IT field-services company built on certified engineers, consistent quality, and a single point of contact — so you get scale without the complexity."
+        title="Built for Global Reach, Engineered for Local Accountability"
+        description="ApexTech Solutions exists to solve one problem: keeping distributed infrastructure running without forcing you to build and manage a field engineering team of your own."
       />
 
       {/* Who We Are */}
@@ -34,23 +34,27 @@ export default function CompanyPage() {
 
             <div className="mt-6 space-y-4 text-[14px] leading-relaxed text-navy-400">
               <p>
-                ApexTech Solutions was founded on a simple idea: global IT
-                operations need global field support — but building that
-                capability in-house is expensive, slow, and hard to scale.
+                ApexTech Solutions exists to solve one problem: keeping
+                distributed infrastructure running without forcing you to build and
+                manage a field engineering team of your own. We operate as your
+                on-the-ground extension — one accountable partner standing behind
+                every site visit, in every country you operate in.
               </p>
 
               <p>
-                We solve that by combining our own directly employed engineers
-                with a rigorously vetted partner network, giving you coverage
-                in 55+ countries without the overhead. One contract, one
-                coordinator, one accountable team.
+                We combine two engineer pools into a single, consistently managed
+                network: engineers we directly employ in our core markets, and a
+                vetted partner network that extends our reach into 55+ countries.
+                Every engineer, regardless of employment model, is certified,
+                background-checked, and trained to work to your runbooks and
+                reporting standards.
               </p>
 
               <p>
-                Every engineer we dispatch is certified, background-checked,
-                and works to your runbooks. We hold ourselves to the same
-                standard whether the job is a single drive swap or a
-                thousand-site rollout.
+                Every ticket — whether it is a single break-fix call or part of a
+                multi-country rollout — runs through the same intake process, the
+                same reporting format, and the same accountable coordinator,
+                regardless of which region it is dispatched to.
               </p>
             </div>
           </Reveal>
@@ -113,9 +117,10 @@ export default function CompanyPage() {
             </h2>
 
             <p className="mt-4 text-[14px] leading-relaxed text-navy-400">
-              We work with anyone who runs IT infrastructure across multiple
-              sites — from a handful of offices to thousands of locations
-              worldwide.
+              We also work as an extension of IT support companies and MSPs who
+              need on-site coverage in regions where they do not have their own
+              engineers, acting under their SLA and, where required,
+              white-labelled as part of their own service.
             </p>
           </Reveal>
 
@@ -166,9 +171,11 @@ export default function CompanyPage() {
             </h2>
 
             <p className="mt-4 text-[14px] leading-relaxed text-navy-400">
-              Our engineers cover everything from deskside support to data
-              centre operations. Here is how our capability breaks down across
-              the disciplines we work in.
+              Every engineer in our network — whether directly employed or part of
+              our partner network — goes through the same qualification process
+              before taking on client tickets, including skills verification,
+              background checks, runbook onboarding, and ongoing performance
+              reviews.
             </p>
 
             <div className="mt-8 pointer-events-none">
@@ -185,12 +192,12 @@ export default function CompanyPage() {
       <Section variant="navy">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-white md:text-[28px]">
-            Ready to work with a partner that covers the world?
+            Ready to put a global field team behind your infrastructure?
           </h2>
 
           <p className="mx-auto mt-3 max-w-xl text-[14px] text-navy-200">
-            Talk to us about your sites, your SLAs, and your goals — we will
-            build a coverage plan that fits.
+            Talk to us about your rollout, your sites, and your support needs —
+            we will scope the right coverage and service model for your estate.
           </p>
 
           <div className="pointer-events-none mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

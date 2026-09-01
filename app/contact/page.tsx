@@ -92,8 +92,8 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Let's talk"
-        description="Whether you need coverage in one country or fifty, we would love to hear from you. Fill in the form and our team will respond within one business day."
+        title="Let's Talk About Your Field Support Needs"
+        description="Whether you need a single site covered or a global rollout coordinated, tell us a bit about your business and we will route you to the right team."
       />
 
       <Section variant="default">

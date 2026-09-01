@@ -12,8 +12,8 @@ export const heroRotatingHeadlines = [
   'Smart Hands',
   'IMAC',
   'Data Centre Support',
-  'Global Deployments',
   'Wireless Survey',
+  'Global Deployments',
 ];
 
 export const trustBar = [
@@ -26,25 +26,32 @@ export const trustBar = [
 export const whatWeDo = [
   {
     title: 'Smart Hands / Break-Fix',
-    description: 'Certified engineers on-site fast to diagnose and repair.',
+    description:
+      'Certified engineers on-site fast to diagnose and repair hardware issues before they become downtime.',
     icon: 'wrench',
-    href: '/services#smart-hands',
+    href: '/services#smart-hands-break-fix',
   },
+
   {
     title: 'IMAC Services',
-    description: 'Install, Move, Add, Change, Dispose — end-to-end.',
+    description:
+      'Install, Move, Add, Change and Dispose handled end-to-end by one accountable team.',
     icon: 'package-plus',
-    href: '/services#imac',
+    href: '/services#imac-services',
   },
+
   {
     title: 'Data Centre Support',
-    description: 'Hands-on support inside colo and private facilities.',
+    description:
+      'Hands-on rack-and-stack, cabling, and hardware support inside mission-critical facilities.',
     icon: 'server',
     href: '/services#data-centre-support',
   },
+
   {
     title: 'Wireless Survey',
-    description: 'Ekahau-certified surveys for reliable Wi-Fi coverage.',
+    description:
+      'Ekahau-certified site surveys that map coverage, capacity, and interference before and after deployment.',
     icon: 'wifi',
     href: '/services#wireless-survey',
   },

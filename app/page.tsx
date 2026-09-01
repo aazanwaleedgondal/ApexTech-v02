@@ -101,19 +101,20 @@ function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-navy-300">
-            Delivering with Scale and Agility
+            Powered by Engineers, Backed by Results
           </p>
 
           <h1 className="mt-6 text-3xl font-bold leading-tight tracking-tight text-white md:text-5xl md:text-[52px]">
             Global <RotatingHeadline />
             <br />
-            <span className="text-navy-300">that drives growth</span>
+            <span className="text-navy-300">That Keep Your Business Running</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-[14px] leading-relaxed text-navy-200 md:text-[15px]">
             A worldwide network of certified, multilingual engineers — from L1
-            deskside to L5 data centre specialists — ready to dispatch within
-            your SLA, 24/7 × 365.
+            deskside support to L5 data centre specialists — ready to dispatch to
+            your site within your SLA, 24/7×365. Wherever your infrastructure
+            lives, we get the right engineer to the right site, every time.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -240,23 +241,23 @@ function TheCompany() {
 
           <div className="mt-6 space-y-4 text-[14px] leading-relaxed text-navy-400">
             <p>
-              ApexTech Solutions operates a worldwide network of certified field
-              engineers and approved partners — giving you on-the-ground
-              coverage in 55+ countries without the overhead of building it
-              yourself.
+              Global reach, local engineers, one accountable team. ApexTech
+              Solutions operates a worldwide network of certified field
+              engineers and approved partners, giving you on-the-ground coverage
+              in 55+ countries without the overhead of building it yourself.
             </p>
 
             <p>
-              We combine our own directly employed engineers with a vetted
-              partner network, so we can scale to thousands of sites while
-              keeping quality consistent. Every engineer is certified, vetted,
-              and works to your runbooks.
+              We combine directly employed engineers with a vetted partner
+              network, so we can scale to thousands of sites while keeping
+              quality consistent — every engineer is certified, vetted, and works
+              to your runbooks.
             </p>
 
             <p>
-              With forward stocking locations across three regions, we reach
-              remote and time-sensitive sites faster — keeping spares close to
-              where they are needed most.
+              With forward stocking locations across three regions, we reach remote
+              and time-sensitive sites faster, keeping spares close to where they
+              are needed most.
             </p>
           </div>
 
@@ -399,7 +400,7 @@ function Testimonials() {
       <SectionHeading
         eyebrow="Testimonials"
         title="What our clients say"
-        description="Real feedback from the teams we support — placeholder quotes, ready to be replaced with client input."
+        description="Feedback from the teams we support and the field programs we run worldwide."
       />
       <div className="grid gap-5 md:grid-cols-3 pointer-events-show">
         {testimonials.map((t, i) => (

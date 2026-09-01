@@ -10,6 +10,7 @@ import { navLinks } from '@/lib/data/site';
 import { services } from '@/lib/data/services';
 import { sectors } from '@/lib/data/sectors';
 import { Button } from '@/components/site/button';
+import Image from 'next/image';
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -43,14 +44,14 @@ export function SiteHeader() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-300',
         scrolled
-          ? 'border-b border-white/10 bg-navy-950/80 backdrop-blur-xl nav-shadow'
+          ? 'border-b border-white/10 bg-navy-950/95 backdrop-blur-xl nav-shadow'
           : 'border-b border-transparent bg-navy-950'
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
+          {/* <Link href="/" className="flex items-center gap-2.5 group">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white transition-transform group-hover:scale-105">
               <span className="text-navy-950 font-bold text-sm">A</span>
             </div>
@@ -62,6 +63,18 @@ export function SiteHeader() {
                 Solutions
               </span>
             </div>
+          </Link> */}
+
+          {/* Logo */}
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/images/logo/logo1.webp"
+              alt="ApexTech Solutions logo"
+              width={200}
+              height={60}
+              className="h-11 w-auto object-contain transition-transform group-hover:scale-105"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

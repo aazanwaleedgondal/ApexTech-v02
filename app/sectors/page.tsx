@@ -12,8 +12,8 @@ export default function SectorsPage() {
     <>
       <PageHero
         eyebrow="Sectors"
-        title="Field services tailored to your industry"
-        description="Every sector has different pressures, compliance needs, and uptime expectations. Here is how we help each one — with a real engagement example for each."
+        title="Built for the Industries That Can't Afford Downtime"
+        description="Every sector has its own definition of downtime — and its own tolerance for it. We tailor dispatch speed, engineer skill sets, and reporting to match what your industry actually needs."
       />
 
       <Section variant="default">
@@ -94,15 +94,15 @@ export default function SectorsPage() {
         <Reveal>
           <div className="mx-auto mt-12 max-w-5xl rounded-2xl bg-navy-950 p-8 text-center md:p-10">
             <h2 className="text-xl font-bold text-white md:text-2xl">
-              Do not see your sector? We probably support it.
+              Don't see your industry listed?
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-[14px] text-navy-200">
-              Our engineer network spans virtually every industry. Tell us what
-              you run and we will tell you how we can help.
+              Our engineer network covers far more than these four sectors — get in
+              touch and we will scope your field support needs.
             </p>
             <div className="mt-6">
               <Button href="/contact" variant="inverse" size="lg">
-                Talk to Us <ArrowRight className="ml-1 h-3.5 w-3.5" />
+                Get In Touch <ArrowRight className="ml-1 h-3.5 w-3.5" />
               </Button>
             </div>
           </div>

@@ -16,8 +16,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="Full-stack IT field services, on demand"
-        description="Nine core services covering everything from a single break-fix call to a global rollout. Tap any service to see what is included and the SLA tiers available."
+        title="Field Services That Keep Your Infrastructure Running"
+        description="Whatever the ticket — a single break-fix call, a store refresh, or a multi-country rollout — ApexTech dispatches the right certified engineer to the right site, backed by one accountable team and one SLA."
       />
 
       <Section variant="default">
@@ -141,15 +141,15 @@ export default function ServicesPage() {
           <Reveal>
             <div className="mt-12 rounded-2xl bg-navy-950 p-8 text-center md:p-10">
               <h2 className="text-xl font-bold text-white md:text-2xl">
-                Not sure which service you need?
+                Not sure which service fits your ticket?
               </h2>
               <p className="mx-auto mt-3 max-w-lg text-[14px] text-navy-200">
-                Tell us about your sites and your goals — we will recommend the
-                right mix of services and SLAs.
+                Let us scope the right service and SLA for your environment, from
+                one-off site calls to multi-country rollouts.
               </p>
               <div className="mt-6">
                 <Button href="/contact" variant="inverse" size="lg">
-                  Talk to Our Team
+                  Become a Partner
                 </Button>
               </div>
             </div>

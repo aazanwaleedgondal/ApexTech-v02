@@ -13,16 +13,16 @@ export default function CoveragePage() {
     <>
       <PageHero
         eyebrow="Coverage"
-        title="Global coverage, local engineers"
-        description="Five regions, 55+ countries, and forward stocking locations that keep spares close to where they are needed. Here is the full picture."
+        title="On-the-Ground Coverage in 55+ Countries"
+        description="Wherever your sites are, ApexTech already has certified engineers nearby. Our network spans 55+ countries, combining directly employed engineers with a vetted partner network that extends coverage into harder-to-reach regions."
       />
 
       {/* Map */}
       <Section variant="default">
         <SectionHeading
-          eyebrow="Global Footprint"
+          eyebrow="Interactive Coverage Map"
           title="Where we operate"
-          description="Hover over each region marker to see country and engineer counts."
+          description="Placeholder — embed an interactive map/component here showing countries covered, filterable by service line."
         />
         <Reveal>
           <WorldMap />
@@ -32,7 +32,7 @@ export default function CoveragePage() {
       {/* Regions detail */}
       <Section variant="off-white">
         <SectionHeading
-          eyebrow="Regions"
+          eyebrow="Coverage by Region"
           title="Coverage by region"
         />
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -73,7 +73,7 @@ export default function CoveragePage() {
         <SectionHeading
           eyebrow="SLA Tiers"
           title="Response time tiers"
-          description="Choose the response window that matches the urgency of each site. Mix and match across your estate."
+          description="Standard dispatch targets a 2-hour SLA response in covered regions; exact windows depend on your service agreement and site location."
         />
         <Reveal>
           <div className="overflow-hidden rounded-2xl border border-navy-100 card-shadow">
@@ -152,9 +152,9 @@ export default function CoveragePage() {
       {/* Forward Stocking */}
       <Section variant="off-white">
         <SectionHeading
-          eyebrow="Forward Stocking"
+          eyebrow="Forward Stocking Locations"
           title="Spares where you need them"
-          description="We keep critical spares staged in eight locations worldwide, so engineers arrive with the parts they need — not just a diagnosis."
+          description="We keep spares and parts close to where they are needed through forward stocking locations across three regions — cutting freight delays that slow down cross-border field support."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {forwardStockingLocations.map((loc, i) => (
@@ -184,15 +184,15 @@ export default function CoveragePage() {
       <Section variant="navy">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-white md:text-[28px]">
-            Want coverage in a country we do not list yet?
+            Need coverage confirmed for a specific country or site?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-[14px] text-navy-200">
-            We onboard new regions regularly. Tell us where you need coverage and
-            we will make it happen.
+            Tell us where you need coverage and our team will confirm the best fit
+            for your sites, SLA, and service requirements.
           </p>
           <div className="mt-8">
             <Button href="/contact" variant="inverse" size="lg">
-              Request Coverage <ArrowRight className="ml-1 h-3.5 w-3.5" />
+              Get In Touch <ArrowRight className="ml-1 h-3.5 w-3.5" />
             </Button>
           </div>
         </div>

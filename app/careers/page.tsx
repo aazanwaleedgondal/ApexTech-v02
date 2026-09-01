@@ -73,15 +73,15 @@ export default function CareersPage() {
     <>
       <PageHero
         eyebrow="Careers"
-        title="Join the ApexTech Network"
-        description="We are always looking for certified, reliable engineers to join our global network. Work flexibly, get paid promptly, and build your skills on real-world engagements."
+        title="Join Our Global Network of Certified Field Engineers"
+        description="ApexTech works with skilled field engineers around the world on a flexible, project basis — connecting your expertise to real client tickets across Smart Hands, IMAC, Data Centre Support, and Wireless Survey work."
       />
 
       {/* Why Join Us */}
       <Section variant="default">
         <SectionHeading
-          eyebrow="Why Join Us"
-          title="The benefits of being part of the network"
+          eyebrow="Why Engineers Work With Us"
+          title="Project-based assignments that match your skills and location"
         />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {whyJoinUs.map((item, i) => (
@@ -127,14 +127,13 @@ export default function CareersPage() {
           </p>
 
           <h2 className="mt-4 text-3xl font-bold leading-tight text-black md:text-4xl">
-            Grow your career with a global technology network
+            Work with a global network that values your expertise
           </h2>
 
           <p className="mt-5 text-[14px] leading-relaxed text-gray-600 md:text-[15px]">
-            Join a network of skilled professionals working on real-world
-            technology projects across industries and locations. Bring your
-            expertise, expand your experience, and work with a team that values
-            quality and reliability.
+            We match engineers to real client work across data centre, networking,
+            POS, and deskside projects — with clear briefs, tools lists, and rates
+            set before you commit.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
