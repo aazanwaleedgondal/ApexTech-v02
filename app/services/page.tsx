@@ -21,7 +21,7 @@ export default function ServicesPage() {
       />
 
       <Section variant="default">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-5xl">
           <div className="space-y-3">
             {services.map((service, i) => {
               const isOpen = openId === service.slug;
@@ -30,7 +30,7 @@ export default function ServicesPage() {
                   <div
                     id={service.slug}
                     className={cn(
-                      'overflow-hidden rounded-2xl border bg-white transition-all duration-300',
+                      'group overflow-hidden rounded-2xl border bg-white transition-all duration-300',
                       isOpen
                         ? 'border-navy-300 card-shadow-hover'
                         : 'border-navy-100 card-shadow hover:border-navy-200'
@@ -38,21 +38,37 @@ export default function ServicesPage() {
                   >
                     <button
                       onClick={() => setOpenId(isOpen ? null : service.slug)}
-                      className="flex w-full items-center justify-between gap-4 p-5 text-left md:p-6"
+                      className="flex w-full items-center gap-5 p-4 text-left md:p-5"
                     >
-                      <div className="flex-1">
+                      {/* Left content */}
+                      <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-3">
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-navy-950 text-[12px] font-bold text-white">
                             {String(i + 1).padStart(2, '0')}
                           </span>
+
                           <h3 className="text-[15px] font-semibold text-navy-950 md:text-base">
                             {service.title}
                           </h3>
                         </div>
+
                         <p className="mt-2 pl-11 text-[13px] leading-relaxed text-navy-400">
                           {service.tagline}
                         </p>
                       </div>
+
+                      {/* Larger image */}
+                      <div className="relative hidden h-52 w-80 shrink-0 overflow-hidden rounded-xl border border-navy-100 sm:block">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+
+                        <div className="absolute inset-0 bg-navy-950/10" />
+                      </div>
+
+                      {/* Chevron */}
                       <ChevronDown
                         className={cn(
                           'h-5 w-5 shrink-0 text-navy-500 transition-transform duration-300',
