@@ -39,7 +39,7 @@ export function RotatingHeadline() {
 
   return (
     <span className="relative inline-block">
-      <span className="text-white">{displayed}</span>
+      <span className="text-gray-950">{displayed}</span>
       <span
         className={cn(
           'ml-1 inline-block h-[0.9em] w-[3px] translate-y-[2px] bg-navy-300',

@@ -30,6 +30,10 @@ export const whatWeDo = [
       'Certified engineers on-site fast to diagnose and repair hardware issues before they become downtime.',
     icon: 'wrench',
     href: '/services#smart-hands-break-fix',
+    iconColor: 'text-blue-600',
+    iconBg: 'bg-gradient-to-br from-orange-50 to-cyan-50',
+    gradient: 'from-blue-500 to-cyan-400',
+    glow: 'bg-blue-500',
   },
 
   {
@@ -38,6 +42,10 @@ export const whatWeDo = [
       'Install, Move, Add, Change and Dispose handled end-to-end by one accountable team.',
     icon: 'package-plus',
     href: '/services#imac-services',
+    iconColor: 'text-violet-600',
+    iconBg: 'bg-gradient-to-br from-violet-50 to-fuchsia-50',
+    gradient: 'from-violet-500 to-fuchsia-500',
+    glow: 'bg-violet-500',
   },
 
   {
@@ -46,6 +54,10 @@ export const whatWeDo = [
       'Hands-on rack-and-stack, cabling, and hardware support inside mission-critical facilities.',
     icon: 'server',
     href: '/services#data-centre-support',
+    iconColor: 'text-emerald-600',
+    iconBg: 'bg-gradient-to-br from-emerald-50 to-teal-50',
+    gradient: 'from-emerald-500 to-teal-400',
+    glow: 'bg-emerald-500',
   },
 
   {
@@ -54,29 +66,47 @@ export const whatWeDo = [
       'Ekahau-certified site surveys that map coverage, capacity, and interference before and after deployment.',
     icon: 'wifi',
     href: '/services#wireless-survey',
+    iconColor: 'text-orange-500',
+    iconBg: 'bg-gradient-to-br from-orange-50 to-amber-50',
+    gradient: 'from-orange-500 to-amber-400',
+    glow: 'bg-orange-500',
   },
 ];
-
 export const howItWorks = [
   {
     step: 1,
     title: 'You raise a request',
-    description: 'Open a ticket via portal, email, or API — any time, day or night.',
+    description:
+      'Open a ticket via portal, email, or API — any time, day or night.',
+    image:
+      'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=800&fit=crop&auto=format&q=80',
   },
+
   {
     step: 2,
     title: 'We match a certified local engineer',
-    description: 'Our system routes to the nearest qualified, vetted engineer.',
+    description:
+      'Our system routes to the nearest qualified, vetted engineer.',
+    image:
+      'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800&h=800&fit=crop&auto=format&q=80',
   },
+
   {
     step: 3,
     title: 'On-site dispatch within SLA',
-    description: 'The engineer arrives on-site within your agreed SLA window.',
+    description:
+      'The engineer arrives on-site within your agreed SLA window.',
+    image:
+      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=800&fit=crop&auto=format&q=80',
   },
+
   {
     step: 4,
     title: 'Full reporting & sign-off',
-    description: 'Photo-verified documentation and sign-off on every ticket.',
+    description:
+      'Photo-verified documentation and sign-off on every ticket.',
+    image:
+      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=800&fit=crop&auto=format&q=80',
   },
 ];
 
