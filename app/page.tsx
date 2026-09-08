@@ -175,7 +175,6 @@ function WhatWeDo() {
                     h-36
                     w-36
                     rounded-full
-                    bg-current
                     opacity-[0.035]
                     blur-3xl
                     transition-all
@@ -183,6 +182,9 @@ function WhatWeDo() {
                     group-hover:scale-[2]
                     group-hover:opacity-[0.10]
                   "
+                  style={{
+                    backgroundColor: item.glow,
+                  }}
                 />
 
                 {/* Second floating glow */}
@@ -195,7 +197,6 @@ function WhatWeDo() {
                     h-32
                     w-32
                     rounded-full
-                    bg-current
                     opacity-[0.025]
                     blur-3xl
                     transition-all
@@ -204,6 +205,9 @@ function WhatWeDo() {
                     group-hover:-translate-y-8
                     group-hover:opacity-[0.08]
                   "
+                  style={{
+                    backgroundColor: item.glow,
+                  }}
                 />
 
                 {/* Animated shine */}
@@ -228,7 +232,7 @@ function WhatWeDo() {
 
                 {/* Colorful icon */}
                 <div
-                  className={`
+                  className="
                     relative
                     z-10
                     mb-5
@@ -238,17 +242,18 @@ function WhatWeDo() {
                     items-center
                     justify-center
                     rounded-2xl
-                    ${item.iconBg}
-                    ${item.iconColor}
                     shadow-sm
                     transition-all
                     duration-500
                     ease-out
-
                     group-hover:scale-110
                     group-hover:-rotate-6
                     group-hover:shadow-xl
-                  `}
+                  "
+                  style={{
+                    color: item.iconColor,
+                    background: item.iconBg,
+                  }}
                 >
                   {/* Icon glow */}
                   <span
@@ -257,15 +262,18 @@ function WhatWeDo() {
                       absolute
                       inset-[-4px]
                       rounded-[18px]
-                      bg-current
                       opacity-0
                       blur-lg
                       transition-all
                       duration-500
                       group-hover:opacity-25
                     "
+                    style={{
+                      backgroundColor: item.glow,
+                    }}
                   />
 
+                  {/* Icon */}
                   <Icon
                     name={item.icon}
                     className="
@@ -273,6 +281,7 @@ function WhatWeDo() {
                       z-10
                       h-6
                       w-6
+                      text-current
                       transition-all
                       duration-500
                       ease-out
@@ -345,7 +354,6 @@ function WhatWeDo() {
                       transition-all
                       duration-500
                       ease-out
-
                       group-hover:translate-x-2
                     "
                   />
@@ -359,15 +367,14 @@ function WhatWeDo() {
                     left-0
                     h-[2px]
                     w-0
-                    bg-gradient-to-r
-                    from-blue-500
-                    via-violet-500
-                    to-cyan-500
                     transition-all
                     duration-700
                     ease-out
                     group-hover:w-full
                   "
+                  style={{
+                    background: item.gradient,
+                  }}
                 />
 
                 {/* Animated border glow */}
@@ -380,11 +387,13 @@ function WhatWeDo() {
                     opacity-0
                     ring-1
                     ring-inset
-                    ring-current
                     transition-opacity
                     duration-500
                     group-hover:opacity-20
                   "
+                  style={{
+                    color: item.iconColor,
+                  }}
                 />
               </Card>
             </Link>
@@ -421,7 +430,7 @@ function WhatWeDo() {
           --card-color: #f59e0b;
         }
 
-        /* Give each card its own subtle glow */
+        /* Card hover glow */
         .service-card-1:hover {
           box-shadow:
             0 20px 45px rgba(59, 130, 246, 0.12),
@@ -480,10 +489,10 @@ function HowItWorks() {
         {howItWorks.map((step, i) => (
           <Reveal key={step.step} delay={i * 120}>
             <div className="group relative flex h-full flex-col items-center">
-              
+
               {/* Image + Number */}
               <div className="relative z-20 mb-[-28px]">
-                
+
                 {/* Soft animated glow */}
                 <div
                   className="
@@ -572,7 +581,7 @@ function HowItWorks() {
                     transition-all
                     duration-500
                     group-hover:scale-110
-                    group-hover:bg-blue-600
+                    group-hover:bg-blue-900
                   "
                 >
                   {step.step}
@@ -879,7 +888,7 @@ function ContactStrip() {
   return (
     <Section variant="off-white">
       <div className="rounded-2xl border border-navy-100 bg-white p-8 text-center card-shadow md:p-12">
-        
+
         {/* Heading */}
         <h2 className="text-2xl font-bold text-navy-950 md:text-[28px]">
           Have some questions or want to say hi?
@@ -891,7 +900,7 @@ function ContactStrip() {
 
         {/* Contact Form */}
         <div className="mx-auto mt-8 flex max-w-2xl flex-col items-stretch gap-4 sm:flex-row sm:items-end">
-          
+
           {/* Role Select */}
           <div className="flex-1 text-left">
             <label className="mb-1.5 block text-[12px] font-medium text-navy-700">

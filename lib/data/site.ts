@@ -30,48 +30,46 @@ export const whatWeDo = [
       'Certified engineers on-site fast to diagnose and repair hardware issues before they become downtime.',
     icon: 'wrench',
     href: '/services#smart-hands-break-fix',
-    iconColor: 'text-blue-600',
-    iconBg: 'bg-gradient-to-br from-orange-50 to-cyan-50',
-    gradient: 'from-blue-500 to-cyan-400',
-    glow: 'bg-blue-500',
+    iconColor: '#2563EB',
+    iconBg: 'linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%)',
+    gradient: 'linear-gradient(90deg, #3B82F6, #22D3EE)',
+    glow: '#3B82F6',
   },
-
   {
     title: 'IMAC Services',
     description:
       'Install, Move, Add, Change and Dispose handled end-to-end by one accountable team.',
     icon: 'package-plus',
     href: '/services#imac-services',
-    iconColor: 'text-violet-600',
-    iconBg: 'bg-gradient-to-br from-violet-50 to-fuchsia-50',
-    gradient: 'from-violet-500 to-fuchsia-500',
-    glow: 'bg-violet-500',
+    iconColor: '#7C3AED',
+    iconBg: 'linear-gradient(135deg, #F5F3FF 0%, #FDF4FF 100%)',
+    gradient: 'linear-gradient(90deg, #8B5CF6, #D946EF)',
+    glow: '#8B5CF6',
   },
-
   {
     title: 'Data Centre Support',
     description:
       'Hands-on rack-and-stack, cabling, and hardware support inside mission-critical facilities.',
     icon: 'server',
     href: '/services#data-centre-support',
-    iconColor: 'text-emerald-600',
-    iconBg: 'bg-gradient-to-br from-emerald-50 to-teal-50',
-    gradient: 'from-emerald-500 to-teal-400',
-    glow: 'bg-emerald-500',
+    iconColor: '#059669',
+    iconBg: 'linear-gradient(135deg, #ECFDF5 0%, #F0FDFA 100%)',
+    gradient: 'linear-gradient(90deg, #10B981, #2DD4BF)',
+    glow: '#10B981',
   },
-
   {
     title: 'Wireless Survey',
     description:
       'Ekahau-certified site surveys that map coverage, capacity, and interference before and after deployment.',
     icon: 'wifi',
     href: '/services#wireless-survey',
-    iconColor: 'text-orange-500',
-    iconBg: 'bg-gradient-to-br from-orange-50 to-amber-50',
-    gradient: 'from-orange-500 to-amber-400',
-    glow: 'bg-orange-500',
+    iconColor: '#F97316',
+    iconBg: 'linear-gradient(135deg, #FFF7ED 0%, #FFFBEB 100%)',
+    gradient: 'linear-gradient(90deg, #F97316, #FBBF24)',
+    glow: '#F97316',
   },
 ];
+
 export const howItWorks = [
   {
     step: 1,
