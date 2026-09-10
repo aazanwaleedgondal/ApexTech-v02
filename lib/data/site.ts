@@ -18,7 +18,7 @@ export const heroRotatingHeadlines = [
 
 export const trustBar = [
   { label: '24/7 × 365 Availability', icon: 'clock' },
-  { label: '55+ Countries', icon: 'globe' },
+  { label: '55+ Countries Present', icon: 'globe' },
   { label: '2-Hour SLA Response', icon: 'timer' },
   { label: 'Ekahau Certified Partner', icon: 'badge-check' },
 ];
@@ -34,6 +34,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%)',
     gradient: 'linear-gradient(90deg, #3B82F6, #22D3EE)',
     glow: '#3B82F6',
+    image: '/images/services/smart.jpg',
   },
   {
     title: 'IMAC Services',
@@ -45,6 +46,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #F5F3FF 0%, #FDF4FF 100%)',
     gradient: 'linear-gradient(90deg, #8B5CF6, #D946EF)',
     glow: '#8B5CF6',
+    image: '/images/services/imac.jpg',
   },
   {
     title: 'Data Centre Support',
@@ -56,6 +58,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #ECFDF5 0%, #F0FDFA 100%)',
     gradient: 'linear-gradient(90deg, #10B981, #2DD4BF)',
     glow: '#10B981',
+    image: '/images/services/data.jpg',
   },
   {
     title: 'Wireless Survey',
@@ -67,6 +70,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #FFF7ED 0%, #FFFBEB 100%)',
     gradient: 'linear-gradient(90deg, #F97316, #FBBF24)',
     glow: '#F97316',
+    image: '/images/services/wireless.jpg',
   },
 ];
 

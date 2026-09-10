@@ -432,7 +432,7 @@ export function SiteHeader() {
             <Button
               href="/contact"
               size="sm"
-              className="hidden sm:inline-flex rounded-xl bg-navy-900 px-5 text-[12px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/20"
+              className="hidden sm:inline-flex rounded-xl bg-navy-900 px-5 text-[12px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
             >
               Become a Partner
               <ArrowRight className="ml-1.5 h-3.5 w-3.5" />

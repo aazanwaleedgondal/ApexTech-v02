@@ -35,10 +35,17 @@
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
   }
+  
   body {
     @apply bg-background text-foreground;
+    font-family: 'Regular', sans-serif;
     font-size: 14px;
     line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hikasami', sans-serif;
+    font-weight: 600;
   }
 }
 
@@ -271,27 +278,59 @@
 
 @layer base {
   body {
-    font-size: 16px;
+    font-size: 17px;
   }
 
-  /* Increase commonly used small text sizes */
   .text-\[11px\] {
-    font-size: 13px !important;
-  }
-
-  .text-\[12px\] {
-    font-size: 14px !important;
-  }
-
-  .text-\[13px\] {
     font-size: 15px !important;
   }
 
-  .text-\[14px\] {
+  .text-\[12px\] {
     font-size: 16px !important;
   }
 
-  .text-\[15px\] {
+  .text-\[13px\] {
     font-size: 17px !important;
   }
+
+  .text-\[14px\] {
+    font-size: 18px !important;
+  }
+
+  .text-\[15px\] {
+    font-size: 19px !important;
+  }
 }
+
+
+
+
+@font-face {
+  font-family: 'Hikasami';
+  src: url('/fonts/Hikasami-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-hikasami {
+  font-family: 'Hikasami', sans-serif;
+  font-weight: 600;
+}
+
+
+@font-face {
+  font-family: 'Regular';
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-dmsans-regular {
+  font-family: 'Regular', sans-serif;
+  font-weight: normal;
+}
+
+
+

@@ -68,11 +68,11 @@ function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
 
-          <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-950">
+          <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-950 font-hikasami ">
             Powered by Engineers, Backed by Results
           </p>
 
-          <h1 className="mt-6 text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl md:text-[44px]">
+          <h1 className="font-hikasami mt-6 text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl md:text-[44px]">
             Global <RotatingHeadline />
             <br />
             <span className="text-blue-950">
@@ -87,7 +87,7 @@ function Hero() {
             lives, we get the right engineer to the right site, every time.
           </p>
 
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="font-hikasami mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button href="/contact" size="lg">
               Become a Partner
             </Button>
@@ -107,15 +107,31 @@ function TrustBar() {
   return (
     <div className="border-b border-navy-100 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-between gap-4 py-5 sm:flex-row">
+        <div className="grid grid-cols-2 gap-y-4 py-5 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-4">
           {trustBar.map((item, i) => (
             <div
               key={item.label}
-              className={`flex items-center gap-2.5 ${i < trustBar.length - 1 ? 'sm:border-r sm:border-navy-100 sm:pr-6' : ''
-                }`}
+              className={`
+                font-hikasami
+                flex
+                items-center
+                justify-center
+                gap-2.5
+                text-center
+                sm:justify-start
+                ${
+                  i < trustBar.length - 1
+                    ? 'sm:border-r sm:border-navy-100 sm:pr-6'
+                    : ''
+                }
+              `}
             >
-              <Icon name={item.icon} className="h-4 w-4 text-navy-600" />
-              <span className="text-[12px] font-semibold text-navy-700">
+              <Icon
+                name={item.icon}
+                className="h-4 w-4 shrink-0 text-navy-600"
+              />
+
+              <span className="text-[15px] font-semibold text-navy-700">
                 {item.label}
               </span>
             </div>
@@ -135,7 +151,8 @@ function WhatWeDo() {
         description="From a single break-fix call to a global rollout, we dispatch the right engineer to the right site — every time."
       />
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {/* 2 Cards Per Row on Desktop */}
+      <div className="grid gap-6 lg:grid-cols-2">
         {whatWeDo.map((item, i) => (
           <Reveal key={item.title} delay={i * 100}>
             <Link
@@ -145,41 +162,41 @@ function WhatWeDo() {
               <Card
                 className={`
                   service-card
+                  service-card-${i + 1}
                   group
                   relative
                   h-full
+                  min-h-[300px]
                   overflow-hidden
                   border
                   border-navy-100
                   bg-white
-                  p-6
+                  p-0
                   transition-all
                   duration-500
                   ease-out
 
-                  hover:-translate-y-3
-                  hover:scale-[1.015]
+                  hover:-translate-y-2
                   hover:border-transparent
-                  hover:card-shadow-hover
-
-                  service-card-${i + 1}
+                  hover:shadow-xl
                 `}
               >
-                {/* Animated background glow */}
+                {/* Animated Background Glow */}
                 <div
                   className="
                     pointer-events-none
                     absolute
-                    -right-16
-                    -top-16
-                    h-36
-                    w-36
+                    -right-20
+                    -top-20
+                    z-0
+                    h-48
+                    w-48
                     rounded-full
-                    opacity-[0.035]
+                    opacity-[0.04]
                     blur-3xl
                     transition-all
                     duration-700
-                    group-hover:scale-[2]
+                    group-hover:scale-[1.8]
                     group-hover:opacity-[0.10]
                   "
                   style={{
@@ -187,213 +204,206 @@ function WhatWeDo() {
                   }}
                 />
 
-                {/* Second floating glow */}
-                <div
-                  className="
-                    pointer-events-none
-                    absolute
-                    -bottom-20
-                    -left-16
-                    h-32
-                    w-32
-                    rounded-full
-                    opacity-[0.025]
-                    blur-3xl
-                    transition-all
-                    duration-1000
-                    group-hover:translate-x-8
-                    group-hover:-translate-y-8
-                    group-hover:opacity-[0.08]
-                  "
-                  style={{
-                    backgroundColor: item.glow,
-                  }}
-                />
+                {/* Content Layout */}
+                <div className="relative z-10 flex h-full flex-col sm:flex-row">
 
-                {/* Animated shine */}
+                  {/* IMAGE */}
+                  <div className="relative h-56 w-full shrink-0 overflow-hidden sm:h-auto sm:w-[42%]">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="
+                        h-full
+                        w-full
+                        object-cover
+                        transition-transform
+                        duration-700
+                        ease-out
+                        group-hover:scale-110
+                      "
+                    />
+
+                    {/* Image Overlay */}
+                    <div
+                      className="
+                        absolute
+                        inset-0
+                        bg-gradient-to-r
+                        from-black/5
+                        via-transparent
+                        to-white/20
+                        transition-opacity
+                        duration-500
+                        group-hover:opacity-60
+                      "
+                    />
+
+                    {/* Image Gradient */}
+                    <div
+                      className="
+                        absolute
+                        inset-0
+                        bg-gradient-to-t
+                        from-navy-950/50
+                        via-transparent
+                        to-transparent
+                        opacity-50
+                      "
+                    />
+
+                    {/* Icon */}
+                    <div
+                      className="
+                        absolute
+                        bottom-5
+                        left-5
+                        flex
+                        h-12
+                        w-12
+                        items-center
+                        justify-center
+                        rounded-xl
+                        border
+                        border-white/40
+                        bg-white/90
+                        shadow-lg
+                        backdrop-blur-sm
+                        transition-all
+                        duration-500
+                        group-hover:scale-110
+                        group-hover:-rotate-3
+                      "
+                      style={{
+                        color: item.iconColor,
+                      }}
+                    >
+                      <Icon
+                        name={item.icon}
+                        className="h-5 w-5"
+                      />
+                    </div>
+                  </div>
+
+                  {/* TEXT CONTENT */}
+                  <div className="relative flex flex-1 flex-col justify-center p-6 lg:p-7">
+
+                    {/* Small Label */}
+                    <div
+                      className="
+                        mb-3
+                        text-[11px]
+                        font-semibold
+                        uppercase
+                        tracking-[0.18em]
+                        text-navy-400
+                      "
+                    >
+                      Service {String(i + 1).padStart(2, '0')}
+                    </div>
+
+                    {/* Title */}
+                    <h3
+                      className="
+                        text-[18px]
+                        font-semibold
+                        leading-snug
+                        text-navy-950
+                        transition-all
+                        duration-500
+                        group-hover:translate-x-1
+                      "
+                    >
+                      {item.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p
+                      className="
+                        mt-3
+                        text-[14px]
+                        leading-[1.7]
+                        text-navy-400
+                        transition-colors
+                        duration-500
+                        group-hover:text-navy-500
+                      "
+                    >
+                      {item.description}
+                    </p>
+
+                    {/* Read More */}
+                    <div
+                      className="
+                        mt-6
+                        flex
+                        items-center
+                        gap-2
+                        text-[13px]
+                        font-semibold
+                        text-navy-700
+                      "
+                    >
+                      <span
+                        className="
+                          transition-colors
+                          duration-300
+                          group-hover:text-navy-950
+                        "
+                      >
+                        Read More
+                      </span>
+
+                      <ArrowRight
+                        className="
+                          h-4
+                          w-4
+                          transition-all
+                          duration-500
+                          ease-out
+                          group-hover:translate-x-2
+                        "
+                      />
+                    </div>
+
+                    {/* Bottom Gradient */}
+                    <div
+                      className="
+                        absolute
+                        bottom-0
+                        left-0
+                        h-[3px]
+                        w-0
+                        transition-all
+                        duration-700
+                        ease-out
+                        group-hover:w-full
+                      "
+                      style={{
+                        background: item.gradient,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Animated Shine */}
                 <div
                   className="
                     pointer-events-none
                     absolute
                     -left-[120%]
                     top-0
+                    z-20
                     h-full
-                    w-1/2
+                    w-1/3
                     skew-x-[-20deg]
                     bg-gradient-to-r
                     from-transparent
-                    via-white/50
+                    via-white/40
                     to-transparent
                     transition-all
                     duration-1000
                     group-hover:left-[140%]
                   "
-                />
-
-                {/* Colorful icon */}
-                <div
-                  className="
-                    relative
-                    z-10
-                    mb-5
-                    flex
-                    h-14
-                    w-14
-                    items-center
-                    justify-center
-                    rounded-2xl
-                    shadow-sm
-                    transition-all
-                    duration-500
-                    ease-out
-                    group-hover:scale-110
-                    group-hover:-rotate-6
-                    group-hover:shadow-xl
-                  "
-                  style={{
-                    color: item.iconColor,
-                    background: item.iconBg,
-                  }}
-                >
-                  {/* Icon glow */}
-                  <span
-                    className="
-                      pointer-events-none
-                      absolute
-                      inset-[-4px]
-                      rounded-[18px]
-                      opacity-0
-                      blur-lg
-                      transition-all
-                      duration-500
-                      group-hover:opacity-25
-                    "
-                    style={{
-                      backgroundColor: item.glow,
-                    }}
-                  />
-
-                  {/* Icon */}
-                  <Icon
-                    name={item.icon}
-                    className="
-                      relative
-                      z-10
-                      h-6
-                      w-6
-                      text-current
-                      transition-all
-                      duration-500
-                      ease-out
-                      group-hover:scale-110
-                    "
-                  />
-                </div>
-
-                {/* Title */}
-                <h3
-                  className="
-                    relative
-                    z-10
-                    text-[15px]
-                    font-semibold
-                    text-navy-950
-                    transition-all
-                    duration-500
-                    group-hover:translate-x-0.5
-                  "
-                >
-                  {item.title}
-                </h3>
-
-                {/* Description */}
-                <p
-                  className="
-                    relative
-                    z-10
-                    mt-2
-                    text-[13px]
-                    leading-relaxed
-                    text-navy-400
-                    transition-colors
-                    duration-500
-                    group-hover:text-navy-500
-                  "
-                >
-                  {item.description}
-                </p>
-
-                {/* Read more */}
-                <div
-                  className="
-                    relative
-                    z-10
-                    mt-5
-                    flex
-                    items-center
-                    gap-1.5
-                    text-[12px]
-                    font-semibold
-                    text-navy-700
-                  "
-                >
-                  <span
-                    className="
-                      transition-colors
-                      duration-300
-                      group-hover:text-navy-950
-                    "
-                  >
-                    Read More
-                  </span>
-
-                  <ArrowRight
-                    className="
-                      h-3.5
-                      w-3.5
-                      transition-all
-                      duration-500
-                      ease-out
-                      group-hover:translate-x-2
-                    "
-                  />
-                </div>
-
-                {/* Animated bottom gradient */}
-                <div
-                  className="
-                    absolute
-                    bottom-0
-                    left-0
-                    h-[2px]
-                    w-0
-                    transition-all
-                    duration-700
-                    ease-out
-                    group-hover:w-full
-                  "
-                  style={{
-                    background: item.gradient,
-                  }}
-                />
-
-                {/* Animated border glow */}
-                <div
-                  className="
-                    pointer-events-none
-                    absolute
-                    inset-0
-                    rounded-[inherit]
-                    opacity-0
-                    ring-1
-                    ring-inset
-                    transition-opacity
-                    duration-500
-                    group-hover:opacity-20
-                  "
-                  style={{
-                    color: item.iconColor,
-                  }}
                 />
               </Card>
             </Link>
@@ -401,6 +411,7 @@ function WhatWeDo() {
         ))}
       </div>
 
+      {/* View All */}
       <div className="mt-10 text-center">
         <Button href="/services" variant="outline" size="default">
           View All Services
@@ -413,24 +424,6 @@ function WhatWeDo() {
           transform-style: preserve-3d;
         }
 
-        /* Individual card color atmosphere */
-        .service-card-1 {
-          --card-color: #3b82f6;
-        }
-
-        .service-card-2 {
-          --card-color: #8b5cf6;
-        }
-
-        .service-card-3 {
-          --card-color: #10b981;
-        }
-
-        .service-card-4 {
-          --card-color: #f59e0b;
-        }
-
-        /* Card hover glow */
         .service-card-1:hover {
           box-shadow:
             0 20px 45px rgba(59, 130, 246, 0.12),
@@ -461,11 +454,16 @@ function WhatWeDo() {
 
 function HowItWorks() {
   return (
-    <Section variant="off-white" className="bg-navy-100">
-      <SectionHeading
-        eyebrow="How It Works"
-        title="From request to sign-off in four steps"
-      />
+    <Section variant="off-white" className="bg-navy-950">
+      <div className="mb-10 text-center">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
+          How It Works
+        </p>
+
+        <h2 className="mt-3 font-bold tracking-tight text-white md:text-2xl">
+          From request to sign-off in four steps
+        </h2>
+      </div>
 
       <div className="relative grid gap-12 pt-8 md:grid-cols-4 md:gap-6">
         {/* Connecting line */}
@@ -479,9 +477,9 @@ function HowItWorks() {
             hidden
             h-px
             bg-gradient-to-r
-            from-blue-200
-            via-violet-200
-            to-cyan-200
+            from-blue-400
+            via-violet-400
+            to-cyan-400
             md:block
           "
         />
@@ -504,7 +502,7 @@ function HowItWorks() {
                     transition-all
                     duration-700
                     group-hover:scale-125
-                    group-hover:bg-blue-500/20
+                    group-hover:bg-blue-500/25
                   "
                 />
 
@@ -516,14 +514,13 @@ function HowItWorks() {
                     w-28
                     overflow-hidden
                     rounded-full
-                    border-[5px]
+                    border-[2px]
                     border-white
-                    bg-navy-100
+                    bg-navy-900
                     shadow-xl
                     transition-all
                     duration-700
                     ease-out
-
                     group-hover:scale-110
                     group-hover:-rotate-3
                   "
@@ -571,7 +568,7 @@ function HowItWorks() {
                     items-center
                     justify-center
                     rounded-full
-                    border-4
+                    border-2
                     border-white
                     bg-navy-950
                     text-[11px]
@@ -597,19 +594,20 @@ function HowItWorks() {
                   overflow-hidden
                   rounded-2xl
                   border
-                  border-navy-100
-                  bg-white
+                  border-white/15
+                  bg-white/[0.06]
                   px-6
                   pb-6
                   pt-12
                   text-center
                   shadow-sm
+                  backdrop-blur-sm
                   transition-all
                   duration-500
                   ease-out
-
                   group-hover:-translate-y-2
-                  group-hover:border-blue-100
+                  group-hover:border-blue-400/40
+                  group-hover:bg-white/[0.09]
                   group-hover:shadow-xl
                 "
               >
@@ -629,44 +627,57 @@ function HowItWorks() {
                     transition-all
                     duration-700
                     group-hover:scale-150
-                    group-hover:opacity-[0.07]
+                    group-hover:opacity-20
                   "
                 />
 
+                {/* Title */}
                 <h3
                   className="
                     relative
                     text-[15px]
                     font-semibold
-                    text-navy-950
+                    text-white
                     transition-transform
                     duration-300
-                    group-hover:translate-y-[-1px]
+                    group-hover:-translate-y-[1px]
                   "
                 >
                   {step.title}
                 </h3>
 
+                {/* Description */}
                 <p
                   className="
                     relative
                     mt-2
                     text-[12px]
                     leading-relaxed
-                    text-navy-400
+                    text-white
                   "
                 >
                   {step.description}
                 </p>
 
                 {/* Progress line */}
-                <div className="relative mx-auto mt-5 h-[2px] w-12 overflow-hidden rounded-full bg-navy-100">
+                <div
+                  className="
+                    relative
+                    mx-auto
+                    mt-5
+                    h-[2px]
+                    w-12
+                    overflow-hidden
+                    rounded-full
+                    bg-white/20
+                  "
+                >
                   <div
                     className="
                       h-full
                       w-0
                       bg-gradient-to-r
-                      from-blue-500
+                      from-blue-400
                       to-cyan-400
                       transition-all
                       duration-700
@@ -743,6 +754,7 @@ function TheCompany() {
     </Section>
   );
 }
+
 function SectorsPreview() {
   return (
     <Section variant="off-white">
