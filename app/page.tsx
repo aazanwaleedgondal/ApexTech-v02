@@ -105,7 +105,7 @@ function Hero() {
 
 function TrustBar() {
   return (
-    <div className="border-b border-navy-100 bg-white">
+    <div className="border-b border-navy-100 bg-white" style={{ display: 'none' }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-y-4 py-5 sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-4">
           {trustBar.map((item, i) => (
@@ -288,18 +288,6 @@ function WhatWeDo() {
                   <div className="relative flex flex-1 flex-col justify-center p-6 lg:p-7">
 
                     {/* Small Label */}
-                    <div
-                      className="
-                        mb-3
-                        text-[11px]
-                        font-semibold
-                        uppercase
-                        tracking-[0.18em]
-                        text-navy-400
-                      "
-                    >
-                      Service {String(i + 1).padStart(2, '0')}
-                    </div>
 
                     {/* Title */}
                     <h3
