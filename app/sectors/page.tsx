@@ -14,6 +14,7 @@ export default function SectorsPage() {
         eyebrow="Sectors"
         title="Built for the Industries That Can't Afford Downtime"
         description="Every sector has its own definition of downtime — and its own tolerance for it. We tailor dispatch speed, engineer skill sets, and reporting to match what your industry actually needs."
+        backgroundImage="/images/all/im2.jpeg"
       />
 
       <Section variant="default">

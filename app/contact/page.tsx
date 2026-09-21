@@ -94,6 +94,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Let's Talk About Your Field Support Needs"
         description="Whether you need a single site covered or a global rollout coordinated, tell us a bit about your business and we will route you to the right team."
+        backgroundImage="/images/services/networking.jpg"
       />
 
       <Section variant="default">

@@ -15,6 +15,7 @@ export default function CoveragePage() {
         eyebrow="Coverage"
         title="On-the-Ground Coverage in 55+ Countries"
         description="Wherever your sites are, ApexTech already has certified engineers nearby. Our network spans 55+ countries, combining directly employed engineers with a vetted partner network that extends coverage into harder-to-reach regions."
+        backgroundImage="/images/all/im6.jpeg"
       />
 
       {/* Map */}

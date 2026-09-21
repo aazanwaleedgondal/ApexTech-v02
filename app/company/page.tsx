@@ -14,11 +14,11 @@ export default function CompanyPage() {
   return (
     <>
       <PageHero
-        eyebrow="Company"
-        title="Built for Global Reach, Engineered for Local Accountability"
-        description="ApexTech Solutions exists to solve one problem: keeping distributed infrastructure running without forcing you to build and manage a field engineering team of your own."
-      />
-
+  eyebrow="Company"
+  title="Built for Global Reach, Engineered for Local Accountability"
+  description="ApexTech Solutions exists to solve one problem: keeping distributed infrastructure running without forcing you to build and manage a field engineering team of your own."
+  backgroundImage="/images/company-bg1.jpg"
+/>
       {/* Who We Are */}
       <Section variant="default">
         <div className="grid items-center gap-12 lg:grid-cols-2">

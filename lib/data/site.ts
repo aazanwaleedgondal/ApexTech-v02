@@ -34,7 +34,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%)',
     gradient: 'linear-gradient(90deg, #3B82F6, #22D3EE)',
     glow: '#3B82F6',
-    image: '/images/services/smart.jpg',
+    image: '/images/all/im6.jpeg',
   },
   {
     title: 'IMAC Services',
@@ -46,7 +46,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #F5F3FF 0%, #FDF4FF 100%)',
     gradient: 'linear-gradient(90deg, #8B5CF6, #D946EF)',
     glow: '#8B5CF6',
-    image: '/images/services/imac.jpg',
+    image: '/images/all/im3.jpeg',
   },
   {
     title: 'Data Centre Support',
@@ -81,7 +81,7 @@ export const howItWorks = [
     description:
       'Open a ticket via portal, email, or API — any time, day or night.',
     image:
-      'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=800&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&auto=format&q=80',
   },
 
   {
@@ -90,7 +90,7 @@ export const howItWorks = [
     description:
       'Our system routes to the nearest qualified, vetted engineer.',
     image:
-      'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800&h=800&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&h=600&fit=crop&auto=format&q=80',
   },
 
   {
@@ -99,7 +99,7 @@ export const howItWorks = [
     description:
       'The engineer arrives on-site within your agreed SLA window.',
     image:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=800&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop&auto=format&q=80',
   },
 
   {
@@ -108,7 +108,7 @@ export const howItWorks = [
     description:
       'Photo-verified documentation and sign-off on every ticket.',
     image:
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=800&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop&auto=format&q=80',
   },
 ];
 

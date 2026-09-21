@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Check, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/site/button';
@@ -35,6 +35,37 @@ import {
   SelectItem,
 } from '@/components/ui/select';
 
+const heroSlides = [
+  {
+    image:
+      "images/all/im6.jpeg",
+    eyebrow: "01 / REQUEST",
+    title: "Service request received",
+    description: "A new request enters the platform.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1400&h=1100&fit=crop&auto=format&q=85",
+    eyebrow: "02 / MATCH",
+    title: "Engineer matched",
+    description: "A qualified local engineer is assigned.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1400&h=1100&fit=crop&auto=format&q=85",
+    eyebrow: "03 / DISPATCH",
+    title: "On-site support",
+    description: "The engineer arrives at the service location.",
+  },
+  {
+    image:
+      "images/all/im4.jpeg",
+    eyebrow: "04 / SIGN-OFF",
+    title: "Work completed",
+    description: "Documentation and sign-off close the ticket.",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -54,51 +85,398 @@ export default function HomePage() {
   );
 }
 
+// function Hero() {
+//   return (
+//     <section className="relative overflow-hidden bg-white pt-32 pb-20 md:pt-40 md:pb-28">
+
+//       {/* Animated colorful dots */}
+//       <FloatingDots />
+
+//       {/* Very subtle background glow */}
+//       <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-blue-100/30 blur-[120px]" />
+
+//       {/* Content */}
+//       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+//         <div className="mx-auto max-w-3xl text-center">
+
+//           <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-950 font-hikasami ">
+//             Powered by Engineers, Backed by Results
+//           </p>
+
+//           <h1 className="font-hikasami mt-6 text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl md:text-[44px]">
+//             Global <RotatingHeadline />
+//             <br />
+//             <span className="text-blue-950">
+//               That Keep Your Business Running
+//             </span>
+//           </h1>
+
+//           <p className="mx-auto mt-6 max-w-2xl text-[14px] leading-relaxed text-gray-600 md:text-[15px]">
+//             A worldwide network of certified, multilingual engineers — from L1
+//             deskside support to L5 data centre specialists — ready to dispatch to
+//             your site within your SLA, 24/7×365. Wherever your infrastructure
+//             lives, we get the right engineer to the right site, every time.
+//           </p>
+
+//           <div className="font-hikasami mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+//             <Button href="/contact" size="lg">
+//               Become a Partner
+//             </Button>
+
+//             <Button href="/services" variant="outline" size="lg">
+//               Explore Our Services
+//             </Button>
+//           </div>
+
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
+
 function Hero() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((current) => (current + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const slide = heroSlides[activeSlide];
+
   return (
-    <section className="relative overflow-hidden bg-white pt-32 pb-20 md:pt-40 md:pb-28">
+    <section className="relative overflow-hidden bg-navy-950 text-white">
+      {/* Background */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-40 top-20 h-[420px] w-[420px] rounded-full bg-blue-500/[0.05] blur-[120px]" />
 
-      {/* Animated colorful dots */}
-      <FloatingDots />
+        <div className="absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-cyan-500/[0.04] blur-[120px]" />
 
-      {/* Very subtle background glow */}
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-blue-100/30 blur-[120px]" />
+        <div
+          className="absolute inset-0 opacity-[0.025]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+        />
+      </div>
 
-      {/* Content */}
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+      <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24">
+        <div className="grid items-center gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-20">
+          {/* ========================================================= */}
+          {/* LEFT */}
+          {/* ========================================================= */}
 
-          <p className="animate-fade-up text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-950 font-hikasami ">
-            Powered by Engineers, Backed by Results
-          </p>
+          <div>
+            {/* Eyebrow */}
+            <div className="mb-7 mt-md-7 mt-8 inline-flex items-center gap-3 bg-white/[0.035] px-3.5 py-2">
 
-          <h1 className="font-hikasami mt-6 text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl md:text-[44px]">
-            Global <RotatingHeadline />
-            <br />
-            <span className="text-blue-950">
-              That Keep Your Business Running
-            </span>
-          </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-[14px] leading-relaxed text-gray-600 md:text-[15px]">
-            A worldwide network of certified, multilingual engineers — from L1
-            deskside support to L5 data centre specialists — ready to dispatch to
-            your site within your SLA, 24/7×365. Wherever your infrastructure
-            lives, we get the right engineer to the right site, every time.
-          </p>
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/60">
+                Powered by Engineers, Backed by Results
+              </span>
+            </div>
 
-          <div className="font-hikasami mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href="/contact" size="lg">
-              Become a Partner
-            </Button>
+            {/* Heading */}
+            <h1 className="w-full text-3xl font-semibold leading-[1.05] tracking-[-0.045em] sm:text-3xl lg:text-[3rem]">
+              Global IT Field Services
+              <br />
 
-            <Button href="/services" variant="outline" size="lg">
-              Explore Our Services
-            </Button>
+              <p className="my-3 text-white/35">
+               That Keep Your Business
+              </p>
+              <p className="my-3 text-white/35">
+               Running
+              </p>
+            </h1>
+
+            {/* Description */}
+            <p className="mt-7 max-w-xl text-base leading-7 text-white/50 md:text-lg">
+              Connect your service requests with qualified local engineers,
+              dispatched on-site within your agreed SLA — with complete
+              visibility from request to sign-off.
+            </p>
+
+            {/* CTA */}
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="/contact"
+                className="
+                  inline-flex
+                  h-12
+                  items-center
+                  justify-center
+                  bg-white
+                  px-6
+                  text-sm
+                  font-semibold
+                  text-navy-800
+                  transition-all
+                  duration-300
+                  hover:bg-blue-100
+                  hover:shadow-[0_5px_12px_rgba(59,130,246,0.25)]
+                "
+              >
+                Raise a Service Request
+
+                <span className="ml-3 text-lg">→</span>
+              </a>
+
+              <a style={{ display: 'none' }}
+                href="#how-it-works"
+                className="
+                  inline-flex
+                  h-12
+                  items-center
+                  justify-center
+                  border
+                  border-white/15
+                  bg-white/[0.03]
+                  px-6
+                  text-sm
+                  font-semibold
+                  text-white
+                  transition-all
+                  duration-300
+                  hover:border-white/30
+                  hover:bg-white/[0.06]
+                "
+              >
+                See How It Works
+              </a>
+            </div>
+
+            {/* Trust points */}
+            <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6">
+              <div className="flex items-center gap-2 text-xs text-white/45">
+                <span className="text-emerald-400">✓</span>
+                24/7 × 365 Availability 
+              </div>
+
+              <div className="flex items-center gap-2 text-xs text-white/45">
+                <span className="text-emerald-400">✓</span>
+                2-Hour SLA Response 
+              </div>
+
+              <div className="flex items-center gap-2 text-xs text-white/45">
+                <span className="text-emerald-400">✓</span>
+                Ekahau Certified Partner
+              </div>
+            </div>
           </div>
 
+          {/* ========================================================= */}
+          {/* RIGHT - DEEPLY BLENDED IMAGE SLIDER */}
+          {/* ========================================================= */}
+
+          <div className="relative mx-auto w-full max-w-[720px]">
+            {/* Large atmospheric glow */}
+            <div className="pointer-events-none absolute -inset-20 bg-blue-500/[0.055] blur-[130px]" />
+
+            <div
+              className="
+      relative
+      aspect-[4/3]
+      overflow-hidden
+      [mask-image:radial-gradient(ellipse_75%_68%_at_58%_50%,black_30%,rgba(0,0,0,0.85)_50%,rgba(0,0,0,0.4)_72%,transparent_100%)]
+      [-webkit-mask-image:radial-gradient(ellipse_75%_68%_at_58%_50%,black_30%,rgba(0,0,0,0.85)_50%,rgba(0,0,0,0.4)_72%,transparent_100%)]
+    "
+            >
+              {heroSlides.map((item, index) => (
+                <div
+                  key={item.image}
+                  className={`
+          absolute
+          inset-[-6%]
+          transition-all
+          duration-[1600ms]
+          ease-out
+          ${activeSlide === index
+                      ? "scale-100 opacity-100"
+                      : "scale-[1.08] opacity-0"
+                    }
+        `}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="
+            h-full
+            w-full
+            object-cover
+            saturate-[0.8]
+          "
+                  />
+
+                  {/* Heavy navy blending */}
+                  <div
+                    className="
+            absolute
+            inset-0
+            bg-navy-950/20
+          "
+                  />
+
+                  {/* LEFT — strongest blend into text */}
+                  <div
+                    className="
+            absolute
+            inset-y-0
+            left-0
+            w-[65%]
+            bg-gradient-to-r
+            from-navy-950
+            via-navy-950/75
+            to-transparent
+          "
+                  />
+
+                  {/* RIGHT — fade into background */}
+                  <div
+                    className="
+            absolute
+            inset-y-0
+            right-0
+            w-[30%]
+            bg-gradient-to-l
+            from-navy-950
+            via-navy-950/45
+            to-transparent
+          "
+                  />
+
+                  {/* TOP — fade */}
+                  <div
+                    className="
+            absolute
+            inset-x-0
+            top-0
+            h-[35%]
+            bg-gradient-to-b
+            from-navy-950
+            via-navy-950/45
+            to-transparent
+          "
+                  />
+
+                  {/* BOTTOM — fade */}
+                  <div
+                    className="
+            absolute
+            inset-x-0
+            bottom-0
+            h-[38%]
+            bg-gradient-to-t
+            from-navy-950
+            via-navy-950/55
+            to-transparent
+          "
+                  />
+
+                  {/* Slight overall blue/navy tint */}
+                  <div className="absolute inset-0 bg-blue-950/[0.08]" />
+                </div>
+              ))}
+
+              {/* ===================================================== */}
+              {/* CONTENT — floating naturally inside the image */}
+              {/* ===================================================== */}
+
+              <div className="absolute bottom-[10%] left-[12%] right-[10%]">
+                <div className="max-w-md">
+                  <p style={{ display: 'none' }}
+                    key={`eyebrow-${activeSlide}`}
+                    className="animate-[fadeIn_0.5s_ease-out] text-[10px] font-semibold uppercase tracking-[0.22em] text-blue-300"
+                  >
+                    {slide.eyebrow}
+                  </p>
+
+                  <h2
+                    key={`title-${activeSlide}`}
+                    className="mt-2 animate-[fadeIn_0.5s_ease-out] text-xl font-semibold tracking-tight text-white md:text-2xl"
+                  >
+                    {slide.title}
+                  </h2>
+
+                  <p
+                    key={`description-${activeSlide}`}
+                    className="mt-1 animate-[fadeIn_0.5s_ease-out] text-xs text-white/50 md:text-sm"
+                  >
+                    {slide.description}
+                  </p>
+                </div>
+
+                {/* Progress */}
+                <div className="mt-5 flex items-center gap-2">
+                  {heroSlides.map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      onClick={() => setActiveSlide(index)}
+                      aria-label={`Show slide ${index + 1}`}
+                      className="group relative h-1 overflow-hidden bg-white/15"
+                    >
+                      <span
+                        className={`
+                absolute inset-y-0 left-0 transition-all
+                ${activeSlide === index
+                            ? "w-full bg-blue-400"
+                            : "w-0 bg-white/40"
+                          }
+              `}
+                      />
+
+                      <span className="block h-1 w-10 md:w-14" />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Very subtle floating stage indicator */}
+            <div className="absolute bottom-3 left-2 hidden sm:block" style={{ display: 'none' }}>
+              <div className="flex items-center gap-3 text-white/35">
+                <span className="text-[9px] uppercase tracking-[0.2em]">
+                  Stage
+                </span>
+
+                <span className="text-sm font-medium text-white/70">
+                  {String(activeSlide + 1).padStart(2, "0")}
+                </span>
+
+                <span className="text-xs text-white/25">
+                  / {String(heroSlides.length).padStart(2, "0")}
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Bottom border */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10" />
+
+      {/* Animation */}
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(5px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </section>
   );
 }
@@ -119,10 +497,9 @@ function TrustBar() {
                 gap-2.5
                 text-center
                 sm:justify-start
-                ${
-                  i < trustBar.length - 1
-                    ? 'sm:border-r sm:border-navy-100 sm:pr-6'
-                    : ''
+                ${i < trustBar.length - 1
+                  ? 'sm:border-r sm:border-navy-100 sm:pr-6'
+                  : ''
                 }
               `}
             >
@@ -442,241 +819,150 @@ function WhatWeDo() {
 
 function HowItWorks() {
   return (
-    <Section variant="off-white" className="bg-navy-950">
-      <div className="mb-10 text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
-          How It Works
-        </p>
+    <Section
+      variant="off-white"
+      className="relative overflow-hidden bg-navy-950 text-white"
+    >
+      <div className="relative z-10">
+        {/* Header */}
+        <div className="mb-16 flex flex-col gap-6 md:mb-20 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <div className="mb-5 flex items-center gap-3">
+              <span className="h-px w-8 bg-blue-400" />
 
-        <h2 className="mt-3 font-bold tracking-tight text-white md:text-2xl">
-          From request to sign-off in four steps
-        </h2>
-      </div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-blue-300">
+                How It Works
+              </p>
+            </div>
 
-      <div className="relative grid gap-12 pt-8 md:grid-cols-4 md:gap-6">
-        {/* Connecting line */}
-        <div
-          className="
-            pointer-events-none
-            absolute
-            left-[12%]
-            right-[12%]
-            top-[84px]
-            hidden
-            h-px
-            bg-gradient-to-r
-            from-blue-400
-            via-violet-400
-            to-cyan-400
-            md:block
-          "
-        />
+            <h2 className="text-3xl font-semibold leading-[1.15] tracking-[-0.03em] text-white md:text-3xl">
+              A straightforward process
+              <br />
+              <span className="text-white/40">Built around your goals</span>
+            </h2>
+          </div>
 
-        {howItWorks.map((step, i) => (
-          <Reveal key={step.step} delay={i * 120}>
-            <div className="group relative flex h-full flex-col items-center">
+          <p className="max-w-sm text-sm leading-6 text-white/45 md:pb-1">
+            From the first conversation to final delivery, every stage is
+            clear, collaborative, and focused on moving your project forward.
+          </p>
+        </div>
 
-              {/* Image + Number */}
-              <div className="relative z-20 mb-[-28px]">
+        {/* Process */}
+        <div className="relative">
+          {/* Main timeline */}
+          <div className="absolute left-0 right-0 top-[56px] hidden h-px bg-white/10 md:block" />
 
-                {/* Soft animated glow */}
+          <div className="grid md:grid-cols-4">
+            {howItWorks.map((step, i) => (
+              <Reveal key={step.step} delay={i * 120}>
                 <div
-                  className="
-                    absolute
-                    inset-[-12px]
-                    rounded-full
-                    bg-blue-500/10
-                    blur-xl
-                    transition-all
-                    duration-700
-                    group-hover:scale-125
-                    group-hover:bg-blue-500/25
-                  "
-                />
-
-                {/* Image */}
-                <div
-                  className="
-                    relative
-                    h-28
-                    w-28
-                    overflow-hidden
-                    rounded-full
-                    border-[2px]
-                    border-white
-                    bg-navy-900
-                    shadow-xl
-                    transition-all
-                    duration-700
-                    ease-out
-                    group-hover:scale-110
-                    group-hover:-rotate-3
-                  "
+                  className={`
+                    group relative
+                    border-white/10
+                    md:min-h-[430px]
+                    md:border-l
+                    ${i === howItWorks.length - 1 ? "md:border-r" : ""}
+                  `}
                 >
-                  <img
-                    src={step.image}
-                    alt={step.title}
-                    className="
-                      h-full
-                      w-full
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-110
-                    "
-                  />
+                  {/* Step number */}
+                  <div className="relative z-10 flex h-[112px] items-start px-5 pt-2 md:px-7">
+                    <div
+                      className="
+                        flex
+                        h-14
+                        w-14
+                        items-center
+                        justify-center
+                        rounded-full
+                        border
+                        border-white/15
+                        bg-navy-950
+                        text-sm
+                        font-medium
+                        text-white
+                        transition-all
+                        duration-300
+                        group-hover:border-blue-400/60
+                        group-hover:bg-navy-700
+                      "
+                    >
+                      {String(step.step).padStart(2, "0")}
+                    </div>
+                  </div>
 
-                  {/* Image overlay */}
+                  {/* Content */}
+                  <div className="px-5 pb-8 md:px-7">
+                    {/* Image */}
+                    <div className="relative mb-7 aspect-[4/3] overflow-hidden bg-white/5">
+                      <img
+                        src={step.image}
+                        alt={step.title}
+                        className="
+                          h-full
+                          w-full
+                          object-cover
+                          grayscale-r
+                          transition-all
+                          duration-700
+                          group-hover:scale-105
+                          group-hover:grayscale-0
+                        "
+                      />
+
+                      {/* Image overlay */}
+                      <div className="absolute inset-0 bg-navy-950/20 transition-opacity duration-500 group-hover:opacity-0" />
+
+                      {/* Image corner */}
+                      <div className="absolute bottom-0 left-0 h-8 w-8 border-b-2 border-l-2 border-white/50 transition-all duration-500 group-hover:h-12 group-hover:w-12 group-hover:border-blue-400" />
+                    </div>
+
+                    {/* Label */}
+                    <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-blue-300/70">
+                      Step {String(step.step).padStart(2, "0")}
+                    </p>
+
+                    {/* Title */}
+                    <h3 className="text-lg font-semibold tracking-tight text-white">
+                      {step.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="mt-3 max-w-[250px] text-[13px] leading-6 text-white/45">
+                      {step.description}
+                    </p>
+                  </div>
+
+                  {/* Bottom hover line */}
                   <div
                     className="
                       absolute
-                      inset-0
-                      rounded-full
-                      bg-gradient-to-br
-                      from-blue-600/10
-                      via-transparent
-                      to-violet-600/20
-                      opacity-60
-                      transition-opacity
-                      duration-500
-                      group-hover:opacity-20
-                    "
-                  />
-                </div>
-
-                {/* Number badge */}
-                <div
-                  className="
-                    absolute
-                    -bottom-1
-                    -right-1
-                    flex
-                    h-9
-                    w-9
-                    items-center
-                    justify-center
-                    rounded-full
-                    border-2
-                    border-white
-                    bg-navy-950
-                    text-[11px]
-                    font-bold
-                    text-white
-                    shadow-lg
-                    transition-all
-                    duration-500
-                    group-hover:scale-110
-                    group-hover:bg-blue-900
-                  "
-                >
-                  {step.step}
-                </div>
-              </div>
-
-              {/* Card */}
-              <div
-                className="
-                  relative
-                  w-full
-                  flex-1
-                  overflow-hidden
-                  rounded-2xl
-                  border
-                  border-white/15
-                  bg-white/[0.06]
-                  px-6
-                  pb-6
-                  pt-12
-                  text-center
-                  shadow-sm
-                  backdrop-blur-sm
-                  transition-all
-                  duration-500
-                  ease-out
-                  group-hover:-translate-y-2
-                  group-hover:border-blue-400/40
-                  group-hover:bg-white/[0.09]
-                  group-hover:shadow-xl
-                "
-              >
-                {/* Background glow */}
-                <div
-                  className="
-                    pointer-events-none
-                    absolute
-                    -right-12
-                    -top-12
-                    h-28
-                    w-28
-                    rounded-full
-                    bg-blue-500
-                    opacity-0
-                    blur-3xl
-                    transition-all
-                    duration-700
-                    group-hover:scale-150
-                    group-hover:opacity-20
-                  "
-                />
-
-                {/* Title */}
-                <h3
-                  className="
-                    relative
-                    text-[15px]
-                    font-semibold
-                    text-white
-                    transition-transform
-                    duration-300
-                    group-hover:-translate-y-[1px]
-                  "
-                >
-                  {step.title}
-                </h3>
-
-                {/* Description */}
-                <p
-                  className="
-                    relative
-                    mt-2
-                    text-[12px]
-                    leading-relaxed
-                    text-white
-                  "
-                >
-                  {step.description}
-                </p>
-
-                {/* Progress line */}
-                <div
-                  className="
-                    relative
-                    mx-auto
-                    mt-5
-                    h-[2px]
-                    w-12
-                    overflow-hidden
-                    rounded-full
-                    bg-white/20
-                  "
-                >
-                  <div
-                    className="
-                      h-full
+                      bottom-0
+                      left-0
+                      h-[2px]
                       w-0
-                      bg-gradient-to-r
-                      from-blue-400
-                      to-cyan-400
+                      bg-blue-400
                       transition-all
-                      duration-700
+                      duration-500
                       group-hover:w-full
                     "
                   />
                 </div>
-              </div>
-            </div>
-          </Reveal>
-        ))}
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom statement */}
+        <div className="mt-12 flex items-center justify-between border-t border-white/10 pt-6">
+          <p className="text-xs text-white/30">
+            Simple process. Clear communication. Better outcomes.
+          </p>
+
+          <div className="hidden items-center gap-2 text-xs text-white/40 sm:flex">
+
+          </div>
+        </div>
       </div>
     </Section>
   );
@@ -730,7 +1016,7 @@ function TheCompany() {
         <div className="relative overflow-hidden rounded-2xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/glob.jpg"
+            src="images/all/services.png"
             alt="ApexTech Solutions"
             className="h-[380px] w-full object-cover transition-transform duration-200 hover:scale-105"
           />
