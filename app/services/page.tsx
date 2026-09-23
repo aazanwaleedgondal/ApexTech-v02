@@ -18,7 +18,7 @@ export default function ServicesPage() {
         eyebrow="Services"
         title="Field Services That Keep Your Infrastructure Running"
         description="Whatever the ticket — a single break-fix call, a store refresh, or a multi-country rollout — ApexTech dispatches the right certified engineer to the right site, backed by one accountable team and one SLA."
-        backgroundImage="/images/all/im5.jpeg"
+        backgroundImage="https://images.unsplash.com/photo-1758691736490-03d39c292d7a?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
       <Section variant="default">

@@ -81,7 +81,7 @@ export const howItWorks = [
     description:
       'Open a ticket via portal, email, or API — any time, day or night.',
     image:
-      'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&auto=format&q=80',
+      'https://images.unsplash.com/photo-1516542076529-1ea3854896f2?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 
   {
@@ -90,7 +90,7 @@ export const howItWorks = [
     description:
       'Our system routes to the nearest qualified, vetted engineer.',
     image:
-      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&h=600&fit=crop&auto=format&q=80',
+      'https://images.pexels.com/photos/8353777/pexels-photo-8353777.jpeg?_gl=1*y2qqbw*_ga*MTk4MTI5MzAwOS4xNzkwMTAzNDA5*_ga_8JE65Q40S6*czE3OTAxMDM0MDgkbzEkZzEkdDE3OTAxMDM1NjUkajU5JGwwJGgw',
   },
 
   {
@@ -108,7 +108,7 @@ export const howItWorks = [
     description:
       'Photo-verified documentation and sign-off on every ticket.',
     image:
-      'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop&auto=format&q=80',
+      'https://images.pexels.com/photos/5716035/pexels-photo-5716035.jpeg?_gl=1*zi7ymh*_ga*MTk4MTI5MzAwOS4xNzkwMTAzNDA5*_ga_8JE65Q40S6*czE3OTAxMDM0MDgkbzEkZzEkdDE3OTAxMDM3OTkkajQxJGwwJGgw',
   },
 ];
 
@@ -118,14 +118,14 @@ export const sectorsPreview = [
     description: 'Same-day break-fix across thousands of stores.',
     href: '/sectors#retail',
     image:
-      'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://i.pinimg.com/1200x/b9/f2/ab/b9f2ab5bc6f22d6e2082bccd5b0ad153.jpg',
   },
   {
     name: 'Enterprise',
     description: 'IMAC, deskside, and maintenance for global estates.',
     href: '/sectors#enterprise',
     image:
-      'https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.unsplash.com/photo-1622675363311-3e1904dc1885?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Data Centre',

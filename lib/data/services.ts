@@ -499,28 +499,12 @@ export type ServiceItem = {
 
 export const services: ServiceItem[] = [
 
-    {
-    slug: 'wireless-survey',
-    title: 'Wireless Survey (Ekahau Certified)',
-    tagline:
-      'Ekahau-certified wireless surveys for reliable coverage, capacity, and performance.',
-    image: '/images/services/wireless.jpg',
-    description:
-      'A wireless network is only as good as the survey behind it. Our Ekahau-certified engineers conduct pre- and post-deployment surveys — heat mapping, interference detection, and access point placement — so your Wi-Fi performs under real-world load, not just on paper.',
-    includes: [
-      'Predictive and on-site AP-on-a-stick surveys',
-      'Signal, coverage, and capacity heat mapping',
-      'Interference detection and remediation recommendations',
-      'Post-deployment validation surveys',
-    ],
-  },
-
-  {
+   {
     slug: 'smart-hands-break-fix',
     title: 'Smart Hands / Break-Fix Support',
     tagline:
       'Fast on-site engineering support for hardware faults and urgent break-fix needs.',
-    image: '/images/services/smart.jpg',
+    image: 'https://plus.unsplash.com/premium_photo-1683133845619-67632f06f237?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'When hardware fails, every hour of downtime costs you. Our Smart Hands engineers arrive on-site to diagnose faults, swap parts, and restore service fast — covering servers, switches, desktops, printers, and point-of-sale hardware.',
     includes: [
@@ -530,12 +514,28 @@ export const services: ServiceItem[] = [
     ],
   },
 
+  
+    {
+    slug: 'wireless-survey',
+    title: 'Wireless Survey (Ekahau Certified)',
+    tagline:
+      'Ekahau-certified wireless surveys for reliable coverage, capacity, and performance.',
+    image: 'https://images.unsplash.com/photo-1638428355507-89456d0fafd5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description:
+      'A wireless network is only as good as the survey behind it. Our Ekahau-certified engineers conduct pre- and post-deployment surveys — heat mapping, interference detection, and access point placement — so your Wi-Fi performs under real-world load, not just on paper.',
+    includes: [
+      'Predictive and on-site AP-on-a-stick surveys',
+      'Signal, coverage, and capacity heat mapping',
+      'Interference detection and remediation recommendations',
+      'Post-deployment validation surveys',
+    ],
+  },
   {
     slug: 'imac-services',
     title: 'IMAC Services (Install, Move, Add, Change, Dispose)',
     tagline:
       'End-to-end support for installations, moves, hardware changes, and decommissioning.',
-    image: '/images/services/imac.jpg',
+    image: 'https://images.unsplash.com/photo-1498409785966-ab341407de6e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'Office moves, hardware refreshes, and decommissions are disruptive when they are not planned properly. Our IMAC teams handle the full lifecycle end-to-end, coordinating around your business hours so operations continue uninterrupted.',
     includes: [
@@ -568,7 +568,7 @@ export const services: ServiceItem[] = [
     title: 'Networking Support',
     tagline:
       'On-site and remote network support for installations, upgrades, and troubleshooting.',
-    image: '/images/services/networking.jpg',
+    image: 'https://images.unsplash.com/photo-1691435828932-911a7801adfb?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
       'From new site installations to live troubleshooting, our network engineers keep connectivity running across your estate — on-site or remote, whenever an issue threatens business continuity.',
     includes: [
@@ -583,7 +583,7 @@ export const services: ServiceItem[] = [
     title: 'Hardware Support',
     tagline:
       'On-site installation, repair, and replacement for critical IT hardware.',
-    image: '/images/services/hardware.jpg',
+    image: 'https://i.pinimg.com/1200x/53/9e/b4/539eb4dfb40cd792bc2bf3cc553cf25a.jpg',
     description:
       'On-site hardware installation and repair for desktops, laptops, servers, printers, and POS equipment. Our engineers diagnose faults, replace failed components, and configure replacement hardware so end users are back up and running with minimal disruption.',
     includes: [
@@ -598,7 +598,7 @@ export const services: ServiceItem[] = [
     title: 'Third-Party Maintenance (TPM)',
     tagline:
       'Extend the useful life of your hardware beyond OEM warranty without OEM support premiums.',
-    image: '/images/services/third.jpg',
+    image: 'https://i.pinimg.com/736x/80/76/1b/80761bfd4d8fa08aa41a0fc124a16a53.jpg',
     description:
       'Keep critical systems running beyond OEM warranty without paying OEM premiums. Our engineers handle component swaps, health checks, and diagnostics across legacy and hybrid environments, extending the useful life of your hardware investment — an alternative to costly OEM support contracts on equipment that is still doing its job.',
     includes: [

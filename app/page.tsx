@@ -38,28 +38,28 @@ import {
 const heroSlides = [
   {
     image:
-      "images/all/im6.jpeg",
+      "https://images.unsplash.com/photo-1602016736566-7ed6a58894bd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     eyebrow: "01 / REQUEST",
     title: "Service request received",
     description: "A new request enters the platform.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1400&h=1100&fit=crop&auto=format&q=85",
+      "https://plus.unsplash.com/premium_photo-1664302288981-41c246f5153c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     eyebrow: "02 / MATCH",
     title: "Engineer matched",
     description: "A qualified local engineer is assigned.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1400&h=1100&fit=crop&auto=format&q=85",
+      "https://i.pinimg.com/1200x/be/69/a6/be69a6583672c75a52d78664bf2d5db9.jpg",
     eyebrow: "03 / DISPATCH",
     title: "On-site support",
     description: "The engineer arrives at the service location.",
   },
   {
     image:
-      "images/all/im4.jpeg",
+      "https://plus.unsplash.com/premium_photo-1661422248310-8c124cdfb9a5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     eyebrow: "04 / SIGN-OFF",
     title: "Work completed",
     description: "Documentation and sign-off close the ticket.",

@@ -64,7 +64,7 @@ export default function CompanyPage() {
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/company-bg1.jpg"
+                src="https://plus.unsplash.com/premium_photo-1661347859297-859b8ae1d7c5?q=80&w=898&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="ApexTech Solutions"
                 className="h-[460px] w-full object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -151,7 +151,7 @@ export default function CompanyPage() {
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/company-bg2.jpg"
+                src="https://plus.unsplash.com/premium_photo-1683133845619-67632f06f237?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="ApexTech Solutions expertise"
                 className="h-[460px] w-full object-cover transition-transform duration-500 hover:scale-105"
               />
