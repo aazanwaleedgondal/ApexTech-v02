@@ -150,52 +150,34 @@ export function SiteHeader() {
             {/* LOGO */}
             {/* =============================================== */}
 
-<Link
-  href="/"
-  onClick={closeMobileMenu}
-  style={{
-    maskImage: 'linear-gradient(to right, transparent, black 35%, black 65%, transparent), linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)',
-    WebkitMaskImage: 'linear-gradient(to right, transparent, black 35%, black 65%, transparent), linear-gradient(to bottom, transparent, black 30%, black 70%, transparent)',
-    maskComposite: 'intersect',
-    WebkitMaskComposite: 'source-in',
-  }}
-  className="
-    relative
-    z-[10001]
-    flex
-    shrink-0
-    items-center
-    rounded-xl
-    bg-white/90
-    px-6
-    py-3
-    shadow-[0_4px_20px_rgba(0,0,0,0.15)]
-    backdrop-blur-md
-    border
-    border-white/20
-    transition-all
-    duration-300
-    hover:bg-white
-    hover:scale-[1.02]
-    hover:shadow-[0_4px_25px_rgba(59,130,246,0.3)]
-  "
->
-  <Image
-    src="/images/logo/ls3.jpg"
-    alt="ApexTech Solutions logo"
-    width={200}
-    height={60}
-    className="
-      h-10
-      w-auto
-      object-contain
-      opacity-100
-      transition-all
-      duration-300
-    "
-    priority
-  />
-</Link>
+            <Link 
+              href="/"
+              onClick={closeMobileMenu}
+              className="
+                relative
+                z-[10001]
+                flex
+                shrink-0
+                items-center
+              "
+            >
+              <Image
+                src="/images/logo/lo.png"
+                alt="ApexTech Solutions logo"
+                width={200}
+                height={60}
+                className="
+                  h-12
+                  w-auto
+                  object-contain
+                  opacity-95
+                  transition-all
+                  duration-300
+                  hover:opacity-100
+                "
+                priority
+              />
+            </Link>
 
             {/* =============================================== */}
             {/* DESKTOP NAVIGATION */}
