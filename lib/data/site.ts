@@ -34,7 +34,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%)',
     gradient: 'linear-gradient(90deg, #3B82F6, #22D3EE)',
     glow: '#3B82F6',
-    image: '/images/all/im6.jpeg',
+    image: 'https://plus.unsplash.com/premium_photo-1683133845619-67632f06f237?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     title: 'IMAC Services',
@@ -46,7 +46,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #F5F3FF 0%, #FDF4FF 100%)',
     gradient: 'linear-gradient(90deg, #8B5CF6, #D946EF)',
     glow: '#8B5CF6',
-    image: '/images/all/im3.jpeg',
+    image: 'https://images.unsplash.com/photo-1498409785966-ab341407de6e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     title: 'Data Centre Support',
@@ -70,7 +70,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #FFF7ED 0%, #FFFBEB 100%)',
     gradient: 'linear-gradient(90deg, #F97316, #FBBF24)',
     glow: '#F97316',
-    image: '/images/services/wireless.jpg',
+    image: 'https://images.unsplash.com/photo-1638428355507-89456d0fafd5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];
 
