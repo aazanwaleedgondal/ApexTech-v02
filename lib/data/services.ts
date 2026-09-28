@@ -535,7 +535,7 @@ export const services: ServiceItem[] = [
     title: 'IMAC Services (Install, Move, Add, Change, Dispose)',
     tagline:
       'End-to-end support for installations, moves, hardware changes, and decommissioning.',
-    image: 'https://images.unsplash.com/photo-1498409785966-ab341407de6e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: '/images/imc.jpeg',
     description:
       'Office moves, hardware refreshes, and decommissions are disruptive when they are not planned properly. Our IMAC teams handle the full lifecycle end-to-end, coordinating around your business hours so operations continue uninterrupted.',
     includes: [
