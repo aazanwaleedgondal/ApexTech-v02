@@ -544,7 +544,7 @@ export const services: ServiceItem[] = [
       'Hardware upgrades and asset replacement',
       'Secure decommissioning and disposal',
     ],
-  },
+  }, 
 
   {
     slug: 'data-centre-support',
