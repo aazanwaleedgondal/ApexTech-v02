@@ -267,7 +267,7 @@ export const whyJoinUs = [
 ];
 
 export const offices = [
-  { city: 'London', country: 'United Kingdom', address: 'Office 21067, 182-184 High Street North, East Ham, London, UK' },
+  { city: 'London', country: 'United Kingdom', flag: '', address: 'Office 21067, 182-184 High Street North, East Ham, London, UK' },
 ];
 
 export const servicesDropdown = [

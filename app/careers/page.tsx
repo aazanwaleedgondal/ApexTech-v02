@@ -75,7 +75,8 @@ export default function CareersPage() {
         eyebrow="Careers"
         title="Join Our Global Network of Certified Field Engineers"
         description="ApexTech works with skilled field engineers around the world on a flexible, project basis  connecting your expertise to real client tickets across Smart Hands, IMAC, Data Centre Support, and Wireless Survey work."
-        backgroundImage="/images/services/smart.jpg"
+        // backgroundImage="https://i.pinimg.com/736x/20/86/e5/2086e52eb6026b28f48b535a7227f394.jpg"
+        backgroundImage="https://i.pinimg.com/736x/da/73/27/da7327aa015b59b43471a968bf1e14e3.jpg"
       />
 
       {/* Why Join Us */}
