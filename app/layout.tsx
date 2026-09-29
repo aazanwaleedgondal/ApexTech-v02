@@ -7,9 +7,9 @@ import { ScrollToTop } from '@/components/site/scroll-to-top';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://apextech.solutions'),
-  title: 'Global IT Field Services | 55+ Countries, 24/7×365 | ApexTech Solutions',
+  title: 'Global IT Field Services | 5+ Countries, 24/7×365 | ApexTech Solutions',
   description:
-    'ApexTech Solutions delivers certified, multilingual field engineers across 55+ countries — Smart Hands, IMAC, Data Centre Support and Ekahau-certified wireless surveys, dispatched within a 2-hour SLA, 24/7×365.',
+    'ApexTech Solutions delivers certified, multilingual field engineers across 5+ countries  Smart Hands, IMAC, Data Centre Support and Ekahau-certified wireless surveys, dispatched within a 2-hour SLA, 24/7×365.',
   keywords: [
     'global IT field services',
     'smart hands support',
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     'ApexTech Solutions',
   ],
   openGraph: {
-    title: 'Global IT Field Services | 55+ Countries, 24/7×365 | ApexTech Solutions',
+    title: 'Global IT Field Services | 5+ Countries, 24/7×365 | ApexTech Solutions',
     description:
-      'Powered by Engineers, Backed by Results. Certified multilingual field engineers across 55+ countries, available 24/7×365.',
+      'Powered by Engineers, Backed by Results. Certified multilingual field engineers across 5+ countries, available 24/7×365.',
     type: 'website',
   },
 };

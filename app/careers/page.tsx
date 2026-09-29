@@ -74,7 +74,7 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Join Our Global Network of Certified Field Engineers"
-        description="ApexTech works with skilled field engineers around the world on a flexible, project basis — connecting your expertise to real client tickets across Smart Hands, IMAC, Data Centre Support, and Wireless Survey work."
+        description="ApexTech works with skilled field engineers around the world on a flexible, project basis  connecting your expertise to real client tickets across Smart Hands, IMAC, Data Centre Support, and Wireless Survey work."
         backgroundImage="/images/services/smart.jpg"
       />
 
@@ -133,7 +133,7 @@ export default function CareersPage() {
 
           <p className="mt-5 text-[14px] leading-relaxed text-gray-600 md:text-[15px]">
             We match engineers to real client work across data centre, networking,
-            POS, and deskside projects — with clear briefs, tools lists, and rates
+            POS, and deskside projects  with clear briefs, tools lists, and rates
             set before you commit.
           </p>
 
@@ -155,7 +155,7 @@ export default function CareersPage() {
           <SectionHeading
             eyebrow="Apply Now"
             title="Submit your application"
-            description="Fill in the form below and our talent team will be in touch. This is a frontend demo — no data is sent anywhere."
+            description="Fill in the form below and our talent team will be in touch. This is a frontend demo  no data is sent anywhere."
             align="center"
           />
           <Reveal>

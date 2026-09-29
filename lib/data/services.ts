@@ -14,7 +14,7 @@
 // //     title: 'Smart Hands / Break-Fix',
 // //     tagline: 'On-demand certified engineers for urgent on-site fixes.',
 // //     description:
-// //       'When something breaks, you need a trusted engineer on-site fast. Our Smart Hands service dispatches certified local engineers to diagnose, repair, and restore operations — typically within your SLA window. We handle everything from a failed drive swap to a full rack rebuild, with full photo documentation and sign-off.',
+// //       'When something breaks, you need a trusted engineer on-site fast. Our Smart Hands service dispatches certified local engineers to diagnose, repair, and restore operations  typically within your SLA window. We handle everything from a failed drive swap to a full rack rebuild, with full photo documentation and sign-off.',
 // //     includes: [
 // //       'Hardware diagnostics & component replacement',
 // //       'Cable tracing and replacement',
@@ -27,7 +27,7 @@
 // //   {
 // //     slug: 'imac',
 // //     title: 'IMAC / IMACD Services',
-// //     tagline: 'Install, Move, Add, Change, Dispose — handled end-to-end.',
+// //     tagline: 'Install, Move, Add, Change, Dispose  handled end-to-end.',
 // //     description:
 // //       'Whether you are refreshing 50 desks or relocating an entire data hall, our IMAC teams plan, schedule, and execute installations, moves, additions, changes, and disposals with minimal disruption. Pre-staged equipment, coordinated scheduling, and post-deployment validation keep your business running.',
 // //     includes: [
@@ -44,7 +44,7 @@
 // //     title: 'Data Centre Support',
 // //     tagline: 'Hands-on support inside your colocation and private facilities.',
 // //     description:
-// //       'Our engineers operate inside colocation sites and private data centres worldwide — performing rack-and-stack, cabling, cross-connects, smart-hands calls, and routine health checks. We coordinate with your remote NOC so every action is verified and logged.',
+// //       'Our engineers operate inside colocation sites and private data centres worldwide  performing rack-and-stack, cabling, cross-connects, smart-hands calls, and routine health checks. We coordinate with your remote NOC so every action is verified and logged.',
 // //     includes: [
 // //       'Rack & stack and rail installation',
 // //       'Structured and patch cabling',
@@ -59,7 +59,7 @@
 // //     title: 'Third-Party Maintenance',
 // //     tagline: 'Extend the life of your hardware beyond OEM support.',
 // //     description:
-// //       'Keep legacy and mixed-vendor infrastructure running with our independent maintenance contracts. We provide parts, labour, and certified engineers at a fraction of OEM renewal costs — covering servers, storage, networking, and more.',
+// //       'Keep legacy and mixed-vendor infrastructure running with our independent maintenance contracts. We provide parts, labour, and certified engineers at a fraction of OEM renewal costs  covering servers, storage, networking, and more.',
 // //     includes: [
 // //       'Multi-vendor hardware coverage',
 // //       'Spare parts logistics & forward stocking',
@@ -89,7 +89,7 @@
 // //     title: 'Deskside / EUC Support',
 // //     tagline: 'On-site end-user computing support for your workforce.',
 // //     description:
-// //       'Our deskside engineers support your employees directly — setting up workstations, resolving hardware issues, performing OS rebuilds, and handling peripherals. Ideal for offices without a dedicated local IT team.',
+// //       'Our deskside engineers support your employees directly  setting up workstations, resolving hardware issues, performing OS rebuilds, and handling peripherals. Ideal for offices without a dedicated local IT team.',
 // //     includes: [
 // //       'Workstation setup & imaging',
 // //       'Hardware troubleshooting & repair',
@@ -104,7 +104,7 @@
 // //     title: 'Wireless Survey',
 // //     tagline: 'Ekahau-certified site surveys for reliable Wi-Fi coverage.',
 // //     description:
-// //       'A strong wireless network starts with a proper survey. Our Ekahau-certified engineers perform detailed site surveys, heat-mapping, and design validation so your Wi-Fi performs in the real world — not just on paper.',
+// //       'A strong wireless network starts with a proper survey. Our Ekahau-certified engineers perform detailed site surveys, heat-mapping, and design validation so your Wi-Fi performs in the real world  not just on paper.',
 // //     includes: [
 // //       'Pre-deployment predictive design',
 // //       'On-site active & passive surveys',
@@ -116,7 +116,7 @@
 // //       {
 // //         name: 'Predictive Survey',
 // //         description:
-// //           'A modelled design based on floor plans before any hardware is installed — ideal for new builds and refreshes.',
+// //           'A modelled design based on floor plans before any hardware is installed  ideal for new builds and refreshes.',
 // //       },
 // //       {
 // //         name: 'Active Survey',
@@ -126,7 +126,7 @@
 // //       {
 // //         name: 'Post-Deployment Validation',
 // //         description:
-// //           'Confirming the installed network meets the design spec — coverage, capacity, and client roaming.',
+// //           'Confirming the installed network meets the design spec  coverage, capacity, and client roaming.',
 // //       },
 // //     ],
 // //   },
@@ -135,7 +135,7 @@
 // //     title: 'IT Asset Disposition (ITAD)',
 // //     tagline: 'Secure, certified decommissioning and recycling of IT assets.',
 // //     description:
-// //       'Retiring hardware should be safe and responsible. Our ITAD service handles secure data destruction, asset tagging, certified recycling, and full audit trails — with certificates of destruction for compliance.',
+// //       'Retiring hardware should be safe and responsible. Our ITAD service handles secure data destruction, asset tagging, certified recycling, and full audit trails  with certificates of destruction for compliance.',
 // //     includes: [
 // //       'Secure data wiping & destruction',
 // //       'Certificate of destruction',
@@ -149,7 +149,7 @@
 // //     title: 'Staff Augmentation',
 // //     tagline: 'Skilled engineers on-site or remote, for as long as you need.',
 // //     description:
-// //       'When you need extra capacity — a rollout, a migration, or covering a gap — we provide vetted engineers on a contract basis. Scale your team up or down without the overhead of permanent hires.',
+// //       'When you need extra capacity  a rollout, a migration, or covering a gap  we provide vetted engineers on a contract basis. Scale your team up or down without the overhead of permanent hires.',
 // //     includes: [
 // //       'Short and long-term placements',
 // //       'On-site, remote, or hybrid',
@@ -506,7 +506,7 @@ export const services: ServiceItem[] = [
       'Fast on-site engineering support for hardware faults and urgent break-fix needs.',
     image: 'https://plus.unsplash.com/premium_photo-1683133845619-67632f06f237?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
-      'When hardware fails, every hour of downtime costs you. Our Smart Hands engineers arrive on-site to diagnose faults, swap parts, and restore service fast — covering servers, switches, desktops, printers, and point-of-sale hardware.',
+      'When hardware fails, every hour of downtime costs you. Our Smart Hands engineers arrive on-site to diagnose faults, swap parts, and restore service fast  covering servers, switches, desktops, printers, and point-of-sale hardware.',
     includes: [
       'Rack & stack, cable patching, and equipment install/removal',
       'Device reboots, visual inspections, and remote-hands support',
@@ -522,7 +522,7 @@ export const services: ServiceItem[] = [
       'Ekahau-certified wireless surveys for reliable coverage, capacity, and performance.',
     image: 'https://images.unsplash.com/photo-1638428355507-89456d0fafd5?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
-      'A wireless network is only as good as the survey behind it. Our Ekahau-certified engineers conduct pre- and post-deployment surveys — heat mapping, interference detection, and access point placement — so your Wi-Fi performs under real-world load, not just on paper.',
+      'A wireless network is only as good as the survey behind it. Our Ekahau-certified engineers conduct pre- and post-deployment surveys  heat mapping, interference detection, and access point placement  so your Wi-Fi performs under real-world load, not just on paper.',
     includes: [
       'Predictive and on-site AP-on-a-stick surveys',
       'Signal, coverage, and capacity heat mapping',
@@ -553,7 +553,7 @@ export const services: ServiceItem[] = [
       'Specialist engineering support for colocation and private data centre environments.',
     image: '/images/services/data.jpg',
     description:
-      'Mission-critical environments need engineers who understand uptime, security, and compliance — not just hardware. ApexTech data centre engineers are L2/L3-qualified specialists trained to work inside colocation and private facilities without disrupting live operations.',
+      'Mission-critical environments need engineers who understand uptime, security, and compliance  not just hardware. ApexTech data centre engineers are L2/L3-qualified specialists trained to work inside colocation and private facilities without disrupting live operations.',
     includes: [
       'Server, switch, and router installation',
       'Structured cabling and patching',
@@ -570,7 +570,7 @@ export const services: ServiceItem[] = [
       'On-site and remote network support for installations, upgrades, and troubleshooting.',
     image: 'https://images.unsplash.com/photo-1691435828932-911a7801adfb?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     description:
-      'From new site installations to live troubleshooting, our network engineers keep connectivity running across your estate — on-site or remote, whenever an issue threatens business continuity.',
+      'From new site installations to live troubleshooting, our network engineers keep connectivity running across your estate  on-site or remote, whenever an issue threatens business continuity.',
     includes: [
       'Network device installation and infrastructure upgrades',
       'Real-time on-site and remote troubleshooting',
@@ -600,7 +600,7 @@ export const services: ServiceItem[] = [
       'Extend the useful life of your hardware beyond OEM warranty without OEM support premiums.',
     image: 'https://i.pinimg.com/736x/80/76/1b/80761bfd4d8fa08aa41a0fc124a16a53.jpg',
     description:
-      'Keep critical systems running beyond OEM warranty without paying OEM premiums. Our engineers handle component swaps, health checks, and diagnostics across legacy and hybrid environments, extending the useful life of your hardware investment — an alternative to costly OEM support contracts on equipment that is still doing its job.',
+      'Keep critical systems running beyond OEM warranty without paying OEM premiums. Our engineers handle component swaps, health checks, and diagnostics across legacy and hybrid environments, extending the useful life of your hardware investment  an alternative to costly OEM support contracts on equipment that is still doing its job.',
     includes: [
       'Hard drive and component replacement',
       'Routine health checks and system diagnostics',

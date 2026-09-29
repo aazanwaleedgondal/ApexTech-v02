@@ -9,7 +9,7 @@ export const regions: Region[] = [
   {
     name: 'North America',
     countries: 3,
-    engineers: 420,
+    engineers: 600,
     description: 'Coverage across the US, Canada, and Mexico with regional forward stocking.',
   },
   {
@@ -21,19 +21,19 @@ export const regions: Region[] = [
   {
     name: 'EMEA',
     countries: 28,
-    engineers: 650,
-    description: 'Our largest footprint — covering Europe, Middle East, and Africa.',
+    engineers: 600,
+    description: 'Our largest footprint  covering Europe, Middle East, and Africa.',
   },
   {
     name: 'APAC',
     countries: 14,
-    engineers: 390,
+    engineers: 300,
     description: 'From Singapore to Sydney, with hubs in key markets.',
   },
   {
     name: 'Australia',
     countries: 2,
-    engineers: 110,
+    engineers: 300,
     description: 'Coverage across Australia and New Zealand, including remote sites.',
   },
 ];
@@ -57,7 +57,7 @@ export const slaTiers: SlaTier[] = [
     name: '2-Hour',
     response: 'On-site within 2 hours',
     description:
-      'Our fastest response tier. A certified engineer is dispatched and on-site within 2 hours of ticket creation — for critical outages and high-priority incidents.',
+      'Our fastest response tier. A certified engineer is dispatched and on-site within 2 hours of ticket creation  for critical outages and high-priority incidents.',
     bestFor: 'Critical outages, data centre incidents, production down',
   },
   {
@@ -78,7 +78,7 @@ export const slaTiers: SlaTier[] = [
     name: 'Next Business Day',
     response: 'On-site next business day',
     description:
-      'Our most economical tier. Scheduled for the next business day — ideal for planned work and low-priority issues.',
+      'Our most economical tier. Scheduled for the next business day  ideal for planned work and low-priority issues.',
     bestFor: 'Planned IMAC, low-priority break-fix, scheduled maintenance',
   },
 ];
@@ -90,7 +90,7 @@ export type ForwardStockingLocation = {
 };
 
 export const forwardStockingLocations: ForwardStockingLocation[] = [
-  { city: 'London', region: 'EMEA', note: 'Primary EMEA hub — spares & staging' },
+  { city: 'London', region: 'EMEA', note: 'Primary EMEA hub  spares & staging' },
   { city: 'Frankfurt', region: 'EMEA', note: 'Data centre spares depot' },
   { city: 'Dubai', region: 'EMEA', note: 'Middle East staging point' },
   { city: 'Singapore', region: 'APAC', note: 'APAC distribution hub' },

@@ -18,7 +18,7 @@ export const heroRotatingHeadlines = [
 
 export const trustBar = [
   { label: '24/7 × 365 Availability', icon: 'clock' },
-  { label: '55+ Countries Present', icon: 'globe' },
+  { label: '5+ Countries Present', icon: 'globe' },
   { label: '2-Hour SLA Response', icon: 'timer' },
   { label: 'Ekahau Certified Partner', icon: 'badge-check' },
 ];
@@ -79,7 +79,7 @@ export const howItWorks = [
     step: 1,
     title: 'You raise a request',
     description:
-      'Open a ticket via portal, email, or API — any time, day or night.',
+      'Open a ticket via portal, email, or API  any time, day or night.',
     image:
       'https://images.unsplash.com/photo-1516542076529-1ea3854896f2?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
@@ -139,12 +139,12 @@ export const sectorsPreview = [
 export const whyApexTech = [
   {
     title: 'Global Reach',
-    description: 'Certified engineers in 55+ countries, ready to dispatch.',
+    description: 'Certified engineers in 5+ countries, ready to dispatch.',
     icon: 'globe',
   },
   {
     title: '24/7 × 365',
-    description: 'Round-the-clock availability — we never close.',
+    description: 'Round-the-clock availability  we never close.',
     icon: 'clock',
   },
   {
@@ -195,17 +195,17 @@ export const faqs = [
   {
     question: "What's your average response time?",
     answer:
-      'Our standard tiers range from 2-hour on-site response for critical incidents to next-business-day for planned work. The right tier depends on the urgency and location — we will help you choose during onboarding.',
+      'Our standard tiers range from 2-hour on-site response for critical incidents to next-business-day for planned work. The right tier depends on the urgency and location  we will help you choose during onboarding.',
   },
   {
     question: 'Do you cover my country?',
     answer:
-      'We operate in 55+ countries across North America, South America, EMEA, APAC, and Australia. If you have a site we do not yet cover, we can usually onboard a certified local engineer within a few weeks.',
+      'We operate in 5+ countries across North America, South America, EMEA, APAC, and Australia. If you have a site we do not yet cover, we can usually onboard a certified local engineer within a few weeks.',
   },
   {
     question: 'Can you white-label support under our brand?',
     answer:
-      'Yes. We can operate under your brand — using your ticketing portal, your email domain, and your reporting templates — so your customers see a seamless extension of your team.',
+      'Yes. We can operate under your brand  using your ticketing portal, your email domain, and your reporting templates  so your customers see a seamless extension of your team.',
   },
   {
     question: 'How do I become a partner?',
@@ -220,7 +220,7 @@ export const faqs = [
   {
     question: 'Can you support legacy or end-of-life hardware?',
     answer:
-      'Yes — our Third-Party Maintenance service covers end-of-life and mixed-vendor hardware, with spare parts logistics and forward stocking to keep legacy estates running.',
+      'Yes  our Third-Party Maintenance service covers end-of-life and mixed-vendor hardware, with spare parts logistics and forward stocking to keep legacy estates running.',
   },
 ];
 
@@ -256,7 +256,7 @@ export const whyJoinUs = [
   },
   {
     title: 'Global Network',
-    description: 'Join 1,750+ certified engineers working across 55+ countries.',
+    description: 'Join 1800+ certified engineers working across 5+ countries.',
     icon: 'globe',
   },
   {
@@ -267,10 +267,7 @@ export const whyJoinUs = [
 ];
 
 export const offices = [
-  { city: 'London', country: 'United Kingdom', flag: 'GB', address: '1 Canada Square, Canary Wharf, London E14 5AB' },
-  { city: 'Singapore', country: 'Singapore', flag: 'SG', address: '8 Marina View, #43-02, Asia Square Tower 1, Singapore 018960' },
-  { city: 'New York', country: 'United States', flag: 'US', address: '350 Fifth Avenue, 34th Floor, New York, NY 10118' },
-  { city: 'Dubai', country: 'United Arab Emirates', flag: 'AE', address: 'Sheikh Zayed Road, Dubai International Financial Centre, Dubai' },
+  { city: 'London', country: 'United Kingdom', address: 'Office 21067, 182-184 High Street North, East Ham, London, UK' },
 ];
 
 export const servicesDropdown = [
@@ -329,7 +326,7 @@ export const sectorsDropdown = [
 
 // export const trustBar = [
 //   { label: '24/7 × 365 Availability', icon: 'clock' },
-//   { label: '55+ Countries', icon: 'globe' },
+//   { label: '5+ Countries', icon: 'globe' },
 //   { label: '2-Hour SLA Response', icon: 'timer' },
 //   { label: 'Ekahau Certified Partner', icon: 'badge-check' },
 // ];
@@ -343,7 +340,7 @@ export const sectorsDropdown = [
 // //   },
 // //   {
 // //     title: 'IMAC Services',
-// //     description: 'Install, Move, Add, Change, Dispose — end-to-end.',
+// //     description: 'Install, Move, Add, Change, Dispose  end-to-end.',
 // //     icon: 'package-plus',
 // //     href: '/services#imac',
 // //   },
@@ -394,7 +391,7 @@ export const sectorsDropdown = [
 //   {
 //     step: 1,
 //     title: 'You raise a request',
-//     description: 'Open a ticket via portal, email, or API — any time, day or night.',
+//     description: 'Open a ticket via portal, email, or API  any time, day or night.',
 //   },
 //   {
 //     step: 2,
@@ -440,12 +437,12 @@ export const sectorsDropdown = [
 // export const whyApexTech = [
 //   {
 //     title: 'Global Reach',
-//     description: 'Certified engineers in 55+ countries, ready to dispatch.',
+//     description: 'Certified engineers in 5+ countries, ready to dispatch.',
 //     icon: 'globe',
 //   },
 //   {
 //     title: '24/7 × 365',
-//     description: 'Round-the-clock availability — we never close.',
+//     description: 'Round-the-clock availability  we never close.',
 //     icon: 'clock',
 //   },
 //   {
@@ -496,17 +493,17 @@ export const sectorsDropdown = [
 //   {
 //     question: "What's your average response time?",
 //     answer:
-//       'Our standard tiers range from 2-hour on-site response for critical incidents to next-business-day for planned work. The right tier depends on the urgency and location — we will help you choose during onboarding.',
+//       'Our standard tiers range from 2-hour on-site response for critical incidents to next-business-day for planned work. The right tier depends on the urgency and location  we will help you choose during onboarding.',
 //   },
 //   {
 //     question: 'Do you cover my country?',
 //     answer:
-//       'We operate in 55+ countries across North America, South America, EMEA, APAC, and Australia. If you have a site we do not yet cover, we can usually onboard a certified local engineer within a few weeks.',
+//       'We operate in 5+ countries across North America, South America, EMEA, APAC, and Australia. If you have a site we do not yet cover, we can usually onboard a certified local engineer within a few weeks.',
 //   },
 //   {
 //     question: 'Can you white-label support under our brand?',
 //     answer:
-//       'Yes. We can operate under your brand — using your ticketing portal, your email domain, and your reporting templates — so your customers see a seamless extension of your team.',
+//       'Yes. We can operate under your brand  using your ticketing portal, your email domain, and your reporting templates  so your customers see a seamless extension of your team.',
 //   },
 //   {
 //     question: 'How do I become a partner?',
@@ -521,7 +518,7 @@ export const sectorsDropdown = [
 //   {
 //     question: 'Can you support legacy or end-of-life hardware?',
 //     answer:
-//       'Yes — our Third-Party Maintenance service covers end-of-life and mixed-vendor hardware, with spare parts logistics and forward stocking to keep legacy estates running.',
+//       'Yes  our Third-Party Maintenance service covers end-of-life and mixed-vendor hardware, with spare parts logistics and forward stocking to keep legacy estates running.',
 //   },
 // ];
 
@@ -557,7 +554,7 @@ export const sectorsDropdown = [
 //   },
 //   {
 //     title: 'Global Network',
-//     description: 'Join 1,750+ certified engineers working across 55+ countries.',
+//     description: 'Join 1,750+ certified engineers working across 5+ countries.',
 //     icon: 'globe',
 //   },
 //   {

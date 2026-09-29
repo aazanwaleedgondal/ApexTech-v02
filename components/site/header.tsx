@@ -183,7 +183,7 @@ export function SiteHeader() {
             {/* DESKTOP NAVIGATION */}
             {/* =============================================== */}
 
-            <nav className="hidden items-center gap-1 lg:flex">
+            <nav className="hidden items-center gap-1 lg:flex font-bold">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
 
@@ -211,7 +211,7 @@ export function SiteHeader() {
                           px-3.5
                           py-2.5
                           text-[12px]
-                          font-medium
+                          font-bold
                           tracking-[0.01em]
                           transition-colors
                           duration-200
@@ -493,7 +493,7 @@ export function SiteHeader() {
                       px-3.5
                       py-2.5
                       text-[12px]
-                      font-medium
+                      font-bold
                       tracking-[0.01em]
                       transition-colors
                       duration-200
@@ -709,7 +709,7 @@ export function SiteHeader() {
                     border-white/[0.07]
                     py-4
                     text-[14px]
-                    font-medium
+                    font-bold
                     transition-all
                     duration-300
                     `,

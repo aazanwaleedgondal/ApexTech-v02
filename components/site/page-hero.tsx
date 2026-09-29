@@ -42,13 +42,13 @@ export function PageHero({
       )}
 
       {/* Dark Navy Overlay */}
-      <div className="absolute inset-0 bg-navy-950/50" />
+      <div className="absolute inset-0 bg-navy-950/35" />
 
       {/* Blue Color Tint */}
-      <div className="absolute inset-0 bg-blue-950/35 mix-blend-multiply " />
+      <div className="absolute inset-0 bg-blue-950/15 mix-blend-multiply " />
 
       {/* Left-to-Right Dark Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/75 to-navy-950/25" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 via-navy-950/35 to-navy-950/10" />
 
       {/* Bottom Fade */}
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-navy-950 to-transparent" />

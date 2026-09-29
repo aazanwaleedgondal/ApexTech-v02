@@ -13,8 +13,8 @@ export default function CoveragePage() {
     <>
       <PageHero
         eyebrow="Coverage"
-        title="On-the-Ground Coverage in 55+ Countries"
-        description="Wherever your sites are, ApexTech already has certified engineers nearby. Our network spans 55+ countries, combining directly employed engineers with a vetted partner network that extends coverage into harder-to-reach regions."
+        title="On-the-Ground Coverage in 5+ Countries"
+        description="Wherever your sites are, ApexTech already has certified engineers nearby. Our network spans 5+ countries, combining directly employed engineers with a vetted partner network that extends coverage into harder-to-reach regions."
         backgroundImage="/images/all/im6.jpeg"
       />
 
@@ -23,7 +23,7 @@ export default function CoveragePage() {
         <SectionHeading
           eyebrow="Interactive Coverage Map"
           title="Where we operate"
-          description="Placeholder — embed an interactive map/component here showing countries covered, filterable by service line."
+          description="Placeholder  embed an interactive map/component here showing countries covered, filterable by service line."
         />
         <Reveal>
           <WorldMap />
@@ -155,7 +155,7 @@ export default function CoveragePage() {
         <SectionHeading
           eyebrow="Forward Stocking Locations"
           title="Spares where you need them"
-          description="We keep spares and parts close to where they are needed through forward stocking locations across three regions — cutting freight delays that slow down cross-border field support."
+          description="We keep spares and parts close to where they are needed through forward stocking locations across three regions  cutting freight delays that slow down cross-border field support."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {forwardStockingLocations.map((loc, i) => (

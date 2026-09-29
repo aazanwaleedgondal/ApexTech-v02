@@ -112,8 +112,8 @@ export default function HomePage() {
 //           </h1>
 
 //           <p className="mx-auto mt-6 max-w-2xl text-[14px] leading-relaxed text-gray-600 md:text-[15px]">
-//             A worldwide network of certified, multilingual engineers — from L1
-//             deskside support to L5 data centre specialists — ready to dispatch to
+//             A worldwide network of certified, multilingual engineers  from L1
+//             deskside support to L5 data centre specialists  ready to dispatch to
 //             your site within your SLA, 24/7×365. Wherever your infrastructure
 //             lives, we get the right engineer to the right site, every time.
 //           </p>
@@ -198,9 +198,9 @@ function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-7 max-w-xl text-base leading-7 text-white/50 md:text-lg">
+            <p className="mt-7 max-w-xl text-base leading-7 text-white/50 text-lg md:text-xl">
               Connect your service requests with qualified local engineers,
-              dispatched on-site within your agreed SLA — with complete
+              dispatched on-site within your agreed SLA  with complete
               visibility from request to sign-off.
             </p>
 
@@ -324,7 +324,7 @@ function Hero() {
           "
                   />
 
-                  {/* LEFT — strongest blend into text */}
+                  {/* LEFT  strongest blend into text */}
                   <div
                     className="
             absolute
@@ -338,7 +338,7 @@ function Hero() {
           "
                   />
 
-                  {/* RIGHT — fade into background */}
+                  {/* RIGHT  fade into background */}
                   <div
                     className="
             absolute
@@ -352,7 +352,7 @@ function Hero() {
           "
                   />
 
-                  {/* TOP — fade */}
+                  {/* TOP  fade */}
                   <div
                     className="
             absolute
@@ -366,7 +366,7 @@ function Hero() {
           "
                   />
 
-                  {/* BOTTOM — fade */}
+                  {/* BOTTOM  fade */}
                   <div
                     className="
             absolute
@@ -386,7 +386,7 @@ function Hero() {
               ))}
 
               {/* ===================================================== */}
-              {/* CONTENT — floating naturally inside the image */}
+              {/* CONTENT  floating naturally inside the image */}
               {/* ===================================================== */}
 
               <div className="absolute bottom-[10%] left-[12%] right-[10%]">
@@ -525,7 +525,7 @@ function WhatWeDo() {
       <SectionHeading
         eyebrow="What We Do"
         title="Field services that keep your infrastructure running"
-        description="From a single break-fix call to a global rollout, we dispatch the right engineer to the right site — every time."
+        description="From a single break-fix call to a global rollout, we dispatch the right engineer to the right site  every time."
       />
 
       {/* 2 Cards Per Row on Desktop */}
@@ -987,13 +987,13 @@ function TheCompany() {
               Global reach, local engineers, one accountable team. ApexTech
               Solutions operates a worldwide network of certified field
               engineers and approved partners, giving you on-the-ground coverage
-              in 55+ countries without the overhead of building it yourself.
+              in 5+ countries without the overhead of building it yourself.
             </p>
 
             <p>
               We combine directly employed engineers with a vetted partner
               network, so we can scale to thousands of sites while keeping
-              quality consistent — every engineer is certified, vetted, and works
+              quality consistent  every engineer is certified, vetted, and works
               to your runbooks.
             </p>
 
@@ -1237,7 +1237,7 @@ function FaqSection() {
       <SectionHeading
         eyebrow="FAQ"
         title="Questions we hear often"
-        description="If you do not see your question here, just reach out — we are happy to help."
+        description="If you do not see your question here, just reach out  we are happy to help."
       />
       <div className="mx-auto max-w-3xl">
         <Accordion type="single" collapsible className="rounded-2xl border border-navy-100 bg-white px-5 card-shadow">

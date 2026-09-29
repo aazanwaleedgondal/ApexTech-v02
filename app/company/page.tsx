@@ -17,7 +17,7 @@ export default function CompanyPage() {
   eyebrow="Company"
   title="Built for Global Reach, Engineered for Local Accountability"
   description="ApexTech Solutions exists to solve one problem: keeping distributed infrastructure running without forcing you to build and manage a field engineering team of your own."
-  backgroundImage="/images/company-bg1.jpg"
+  backgroundImage="https://i.pinimg.com/736x/d8/3d/73/d83d739d07a3afab37e05515554c187e.jpg"
 />
       {/* Who We Are */}
       <Section variant="default">
@@ -37,22 +37,22 @@ export default function CompanyPage() {
                 ApexTech Solutions exists to solve one problem: keeping
                 distributed infrastructure running without forcing you to build and
                 manage a field engineering team of your own. We operate as your
-                on-the-ground extension — one accountable partner standing behind
+                on-the-ground extension  one accountable partner standing behind
                 every site visit, in every country you operate in.
               </p>
 
               <p>
                 We combine two engineer pools into a single, consistently managed
                 network: engineers we directly employ in our core markets, and a
-                vetted partner network that extends our reach into 55+ countries.
+                vetted partner network that extends our reach into 5+ countries.
                 Every engineer, regardless of employment model, is certified,
                 background-checked, and trained to work to your runbooks and
                 reporting standards.
               </p>
 
               <p>
-                Every ticket — whether it is a single break-fix call or part of a
-                multi-country rollout — runs through the same intake process, the
+                Every ticket  whether it is a single break-fix call or part of a
+                multi-country rollout  runs through the same intake process, the
                 same reporting format, and the same accountable coordinator,
                 regardless of which region it is dispatched to.
               </p>
@@ -171,8 +171,8 @@ export default function CompanyPage() {
             </h2>
 
             <p className="mt-4 text-[14px] leading-relaxed text-navy-400">
-              Every engineer in our network — whether directly employed or part of
-              our partner network — goes through the same qualification process
+              Every engineer in our network  whether directly employed or part of
+              our partner network  goes through the same qualification process
               before taking on client tickets, including skills verification,
               background checks, runbook onboarding, and ongoing performance
               reviews.
@@ -196,7 +196,7 @@ export default function CompanyPage() {
           </h2>
 
           <p className="mx-auto mt-3 max-w-xl text-[14px] text-navy-200">
-            Talk to us about your rollout, your sites, and your support needs —
+            Talk to us about your rollout, your sites, and your support needs 
             we will scope the right coverage and service model for your estate.
           </p>
 

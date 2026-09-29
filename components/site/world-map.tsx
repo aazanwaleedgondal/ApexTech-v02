@@ -68,7 +68,7 @@ export function WorldMap() {
                 <span className="absolute -inset-2 animate-ping rounded-full bg-navy-500/30" />
                 <span className="relative block h-3 w-3 rounded-full bg-navy-700 ring-2 ring-white" />
               </div>
-              <div className="pointer-events-none absolute left-1/2 top-5 z-10 w-44 -translate-x-1/2 rounded-xl border border-navy-100 bg-white p-3 opacity-0 shadow-lg transition-opacity group-hover:opacity-100">
+              <div className="pointer-events-none absolute left-1/2 top-5 z-10 w-44 -translate-x-1/2 rounded-xl border border-navy-100 bg-white p-3 opacity-100 shadow-lg">
                 <p className="text-[12px] font-bold text-navy-950">{region.name}</p>
                 <p className="mt-1 text-[11px] text-navy-400">
                   {region.countries} countries · {region.engineers} engineers

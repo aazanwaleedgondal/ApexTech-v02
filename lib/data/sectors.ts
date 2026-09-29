@@ -13,11 +13,11 @@ export const sectors: Sector[] = [
     slug: 'retail',
     name: 'Retail',
     intro:
-      'Retailers run on uptime. A single store outage means lost revenue and frustrated customers — and with hundreds or thousands of sites, something is always breaking somewhere.',
+      'Retailers run on uptime. A single store outage means lost revenue and frustrated customers  and with hundreds or thousands of sites, something is always breaking somewhere.',
     challenge:
       'A national retailer needed same-day break-fix across 1,200 stores in 14 countries, with no internal field team and inconsistent local vendors.',
     engagement:
-      'We stood up a single point of contact, onboarded certified engineers in every region, and built a ticketing workflow that routed each call to the nearest qualified resource — with photo sign-off and SLA tracking on every ticket.',
+      'We stood up a single point of contact, onboarded certified engineers in every region, and built a ticketing workflow that routed each call to the nearest qualified resource  with photo sign-off and SLA tracking on every ticket.',
     pullQuote:
       'ApexTech became our field team overnight. One number, one SLA, every store covered.',
     outcome: [
@@ -30,7 +30,7 @@ export const sectors: Sector[] = [
     slug: 'enterprise',
     name: 'Enterprise',
     intro:
-      'Enterprise IT estates span offices, data centres, and remote workers — often with mixed vendors and legacy hardware that still needs supporting.',
+      'Enterprise IT estates span offices, data centres, and remote workers  often with mixed vendors and legacy hardware that still needs supporting.',
     challenge:
       'A global enterprise was refreshing 8,000 endpoints across 60 offices while keeping day-to-day deskside support running.',
     engagement:
@@ -48,7 +48,7 @@ export const sectors: Sector[] = [
     slug: 'healthcare',
     name: 'Healthcare',
     intro:
-      'Healthcare IT supports clinicians and patients — where a downed workstation or a failed wireless AP can delay care. Reliability and speed are not optional.',
+      'Healthcare IT supports clinicians and patients  where a downed workstation or a failed wireless AP can delay care. Reliability and speed are not optional.',
     challenge:
       'A hospital group needed reliable deskside and wireless support across 22 sites, with strict compliance and zero tolerance for extended downtime.',
     engagement:
@@ -69,7 +69,7 @@ export const sectors: Sector[] = [
     challenge:
       'A financial institution needed secure IMAC and maintenance across 40 branches and two data centres, with background-checked engineers and strict change windows.',
     engagement:
-      'We supplied vetted engineers, scheduled all work inside approved change windows, and provided full chain-of-custody documentation for every asset touched — including secure ITAD for retired hardware.',
+      'We supplied vetted engineers, scheduled all work inside approved change windows, and provided full chain-of-custody documentation for every asset touched  including secure ITAD for retired hardware.',
     pullQuote:
       'The compliance documentation alone made them worth it. Everything is tracked, signed, and auditable.',
     outcome: [

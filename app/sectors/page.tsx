@@ -13,7 +13,7 @@ export default function SectorsPage() {
       <PageHero
         eyebrow="Sectors"
         title="Built for the Industries That Can't Afford Downtime"
-        description="Every sector has its own definition of downtime — and its own tolerance for it. We tailor dispatch speed, engineer skill sets, and reporting to match what your industry actually needs."
+        description="Every sector has its own definition of downtime  and its own tolerance for it. We tailor dispatch speed, engineer skill sets, and reporting to match what your industry actually needs."
         backgroundImage="https://images.unsplash.com/photo-1761307234387-d9291985eaf9?q=80&w=775&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
@@ -98,7 +98,7 @@ export default function SectorsPage() {
               Don't see your industry listed?
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-[14px] text-navy-200">
-              Our engineer network covers far more than these four sectors — get in
+              Our engineer network covers far more than these four sectors  get in
               touch and we will scope your field support needs.
             </p>
             <div className="mt-6">
