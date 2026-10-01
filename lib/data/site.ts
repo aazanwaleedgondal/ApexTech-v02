@@ -46,7 +46,7 @@ export const whatWeDo = [
     iconBg: 'linear-gradient(135deg, #F5F3FF 0%, #FDF4FF 100%)',
     gradient: 'linear-gradient(90deg, #8B5CF6, #D946EF)',
     glow: '#8B5CF6',
-    image: 'https://images.unsplash.com/photo-1498409785966-ab341407de6e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: '/images/imc.jpeg',
   },
   {
     title: 'Data Centre Support',
